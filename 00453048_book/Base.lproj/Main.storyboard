@@ -1,24 +1,1603 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M0T-b0-shQ">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="6dw-Wn-cM7">
+            <objects>
+                <navigationController id="M0T-b0-shQ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yqv-Wm-Ta7">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9jc-ec-6pI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="feh-8B-b0z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4682" y="126"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_0453048_book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="開始" translatesAutoresizingMaskIntoConstraints="NO" id="l1k-wu-8HZ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="197"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.89805700182713533" green="1" blue="0.98627721891846154" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="仙劍奇俠傳系列" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="npQ-wn-kca">
+                                <rect key="frame" x="0.0" y="330" width="375" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmS-Xg-fhe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="點我開始閱讀">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9Ey-Qa-n2c" kind="show" id="esV-kc-P0X"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92442923858915083" green="0.99737662959729734" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="0.87293655660000002" blue="0.37129820749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="tSq-06-3rW"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-3770" y="126"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Mre-Qs-bBf">
+            <objects>
+                <viewController id="9Ey-Qa-n2c" customClass="ViewController" customModule="_0453048_book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="A2K-ab-p7r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="開始" translatesAutoresizingMaskIntoConstraints="NO" id="MXL-JY-NLn">
+                                <rect key="frame" x="0.0" y="64" width="375" height="197"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.89805700180000003" green="1" blue="0.98627721889999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="URK-k1-9ve">
+                                <rect key="frame" x="67" y="269" width="240" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">仗 剑 江 湖 梦 已 远
+仙 剑 奇 侠 永 流 传</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUs-Np-mii">
+                                <rect key="frame" x="96" y="365" width="183" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8250215649173287" green="0.86880738689868764" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="仙劍奇俠傳一">
+                                    <color key="titleColor" red="1" green="0.2048857604286316" blue="0.22884457565628613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gjY-V1-PPr" kind="show" id="Fwe-QY-gQk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sJ-K7-Z7w">
+                                <rect key="frame" x="96" y="423" width="183" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8250215649" green="0.86880738690000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="仙劍奇俠傳二">
+                                    <color key="titleColor" red="1" green="0.20488576040000001" blue="0.2288445757" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Rea-XX-DTg" kind="show" id="0pO-aS-ZQT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JyK-Ok-QQj">
+                                <rect key="frame" x="96" y="481" width="183" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8250215649" green="0.86880738690000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="仙劍奇俠傳五前傳">
+                                    <color key="titleColor" red="1" green="0.20488576040000001" blue="0.2288445757" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kza-oa-XUX" kind="show" id="eDf-Tt-8Gr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUd-vq-TM0">
+                                <rect key="frame" x="96" y="545" width="183" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8250215649" green="0.86880738690000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="仙劍奇俠傳五">
+                                    <color key="titleColor" red="1" green="0.20488576040000001" blue="0.2288445757" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gs5-Y4-MhP" kind="show" id="aeL-Wt-za0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruD-UV-YA7">
+                                <rect key="frame" x="96" y="608" width="183" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8250215649" green="0.86880738690000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="歷代人物關係">
+                                    <color key="titleColor" red="1" green="0.20488576040000001" blue="0.2288445757" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="FyL-fG-m7w" kind="show" id="kPZ-hA-UdJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92442923860000004" green="0.99737662959999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="0.87293655660000002" blue="0.37129820749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="8qn-oj-uw5"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="8SO-aL-akc"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VBB-21-IJV" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2794.4000000000001" y="125.61576354679804"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Xrc-T3-odF">
+            <objects>
+                <tabBarController id="gjY-V1-PPr" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uJt-Fs-uMu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="mi7-ia-Igq" kind="relationship" relationship="viewControllers" id="Xe8-ns-PRF"/>
+                        <segue destination="BEZ-oQ-jOF" kind="relationship" relationship="viewControllers" id="cc6-hT-AES"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cMe-n4-zLz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1857" y="-1887"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="uCf-bE-9wz">
+            <objects>
+                <tableViewController id="ifw-Cx-ITB" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aJQ-jr-9tm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aKh-Cg-Gpu">
+                            <rect key="frame" x="0.0" y="72" width="375" height="164"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ub9-Hp-LIM">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ub9-Hp-LIM" id="vYm-zv-mcQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ifw-Cx-ITB" id="DNh-FE-f0o"/>
+                            <outlet property="delegate" destination="ifw-Cx-ITB" id="UuD-YD-otX"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mq7-UQ-nrw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4087" y="-2342"/>
+        </scene>
+        <!--人物-->
+        <scene sceneID="6k0-FA-42J">
+            <objects>
+                <tableViewController id="mi7-ia-Igq" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="H73-JG-Fk9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="nH7-5x-ZSM">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="217" id="YDO-WJ-9em">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="217"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YDO-WJ-9em" id="yIa-qf-rvf">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="216.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound1" translatesAutoresizingMaskIntoConstraints="NO" id="e1z-ED-lF8">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="217"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="李逍遙" translatesAutoresizingMaskIntoConstraints="NO" id="1jc-PG-hTQ">
+                                                    <rect key="frame" x="0.0" y="2" width="95" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="小渔村中的店小二，由婶婶含辛茹苦扶养长大，在客栈中英雄 好汉见多得了，一心想做除暴安良的正义游侠。命带桃花，初闯江 湖即与三名女主角产生一段难分难解的四角恋情。" translatesAutoresizingMaskIntoConstraints="NO" id="6Mw-M4-kvb">
+                                                    <rect key="frame" x="103" y="4" width="240" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name=".PingFangTC-Regular" family=".PingFang TC" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b0m-3v-UrS">
+                                                    <rect key="frame" x="16" y="127" width="327" height="79"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">翩翩潇洒美少年，灵岛求药结仙缘；
+千里崎岖不辞苦，仗剑江湖为红颜。</string>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="217" id="EzU-lH-h5p">
+                                        <rect key="frame" x="0.0" y="217" width="375" height="217"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EzU-lH-h5p" id="stW-oq-uD3">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="216.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound1" translatesAutoresizingMaskIntoConstraints="NO" id="rYh-o4-U9f">
+                                                    <rect key="frame" x="0.0" y="-8" width="375" height="224"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="趙靈兒" translatesAutoresizingMaskIntoConstraints="NO" id="Sk1-Zc-QOv">
+                                                    <rect key="frame" x="0.0" y="2" width="95" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="自幼与世隔绝，宛若池中白莲的脱俗少女，跟随姥姥隐居仙灵岛修炼，躲避仇人的追杀。难以告人的神身世，让她逃不过命运的捉弄，注定在滚滚红尘中历尽千灾万劫" translatesAutoresizingMaskIntoConstraints="NO" id="tW9-eC-7Fo">
+                                                    <rect key="frame" x="103" y="4" width="240" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name=".PingFangTC-Regular" family=".PingFang TC" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6PL-bF-F42">
+                                                    <rect key="frame" x="16" y="127" width="327" height="79"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">仙灵岛上别洞天，池中孤莲伴月眠；
+一朝风雨落水面，愿君拾得惜相怜。</string>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="217" id="JYY-b9-o6i">
+                                        <rect key="frame" x="0.0" y="434" width="375" height="217"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JYY-b9-o6i" id="Ff9-1p-UaI">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="216.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound1" translatesAutoresizingMaskIntoConstraints="NO" id="4ki-rl-gYa">
+                                                    <rect key="frame" x="0.0" y="-13" width="375" height="229"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="林月如" translatesAutoresizingMaskIntoConstraints="NO" id="Baj-aF-WnO">
+                                                    <rect key="frame" x="0.0" y="2" width="95" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="南武林盟主林天南之女，任性刁蛮的女剑侠，凭着家传绝技， 放眼江南未逢敌手。只因身为女儿身，不能竞逐盟主之位，不得已设擂台比武招亲，挑选英雄少年入赘林家。" translatesAutoresizingMaskIntoConstraints="NO" id="Mzf-Kh-fll">
+                                                    <rect key="frame" x="103" y="4" width="240" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name=".PingFangTC-Regular" family=".PingFang TC" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Ig-Tb-lpW">
+                                                    <rect key="frame" x="16" y="127" width="327" height="79"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">刁蛮少女贵千金，比武招亲动芳心；
+盼能与君长相依，结伴江湖侠侣行。</string>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="190" id="ZsJ-zZ-x74">
+                                        <rect key="frame" x="0.0" y="651" width="375" height="190"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZsJ-zZ-x74" id="K6A-mI-vFm">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="189.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound1" translatesAutoresizingMaskIntoConstraints="NO" id="Ezu-7u-OKx">
+                                                    <rect key="frame" x="0.0" y="-15" width="375" height="218"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="阿奴" translatesAutoresizingMaskIntoConstraints="NO" id="0TF-Ze-4ob">
+                                                    <rect key="frame" x="0.0" y="2" width="95" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="白苗族的族长之女，个性刁钻活泼，甫出场便将李逍遥耍得团团转，对她毫无招架之力。外表一派天真烂漫，施用巫术毒蛊的手段，却叫人毛骨悚然。" translatesAutoresizingMaskIntoConstraints="NO" id="fnb-IQ-d4P">
+                                                    <rect key="frame" x="103" y="4" width="240" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name=".PingFangTC-Regular" family=".PingFang TC" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EzV-YO-9bt">
+                                                    <rect key="frame" x="16" y="127" width="327" height="79"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">如花苗女鬼精灵，喜逢君子初尝情；
+落花有意结连理，伴月原做一颗星。</string>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="mi7-ia-Igq" id="ynl-lT-Bfi"/>
+                            <outlet property="delegate" destination="mi7-ia-Igq" id="pQg-2W-Rts"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="人物" id="keK-am-Bwf"/>
+                    <navigationItem key="navigationItem" id="xJI-4q-snU"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wHN-sk-bX3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="957.60000000000002" y="-4063.3004926108374"/>
+        </scene>
+        <!--人物-->
+        <scene sceneID="q8r-Oe-Pfd">
+            <objects>
+                <tableViewController id="pE3-aj-K7q" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ScZ-Aq-EWW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="3w0-P7-Lat">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="264" id="ggI-DF-jCX">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="264"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ggI-DF-jCX" id="mAb-db-Bxs">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="263.66666666666669"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound2" translatesAutoresizingMaskIntoConstraints="NO" id="avW-jK-oaw">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="264"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="王小虎" translatesAutoresizingMaskIntoConstraints="NO" id="vI1-4U-Uhi">
+                                                    <rect key="frame" x="0.0" y="2" width="95" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="初入江湖的热血少年，敢作敢当、负责任感、积极务实，正义感很强，也因为渐渐成熟与经历许多事情后，一股正气慢慢延伸愿意保护所有善良的人与正确的事上面，却通常不考虑自己有没有能力对付。" translatesAutoresizingMaskIntoConstraints="NO" id="8mY-29-gKz">
+                                                    <rect key="frame" x="103" y="4" width="240" height="170"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name=".PingFangTC-Regular" family=".PingFang TC" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nwb-aY-iOU">
+                                                    <rect key="frame" x="16" y="127" width="277" height="131"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">仗义行路江湖，佳人情重怎辜负。 离合聚散，风风雨雨，盼能相见。 两好婵娟，两头苦恼，怕伤情感。 相随行万里，几多相助，谁将是，终身伴。
+</string>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="310" id="D2H-dH-mKv">
+                                        <rect key="frame" x="0.0" y="264" width="375" height="310"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="D2H-dH-mKv" id="1xK-JV-NMr">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="309.66666666666669"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound2" translatesAutoresizingMaskIntoConstraints="NO" id="lBO-Lm-RSF">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="310"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="蘇媚" translatesAutoresizingMaskIntoConstraints="NO" id="1fH-5c-G7L">
+                                                    <rect key="frame" x="0.0" y="2" width="95" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="个性直接坦率、爽朗无心机，带给人相当骄傲任性的感觉，狠辣与智能兼备。由于从小的孤苦无依，只有互相利用才能生存的环境，在心中筑起了不易信任人的防备心。其它部分则是谜团。" translatesAutoresizingMaskIntoConstraints="NO" id="02g-XV-jCH">
+                                                    <rect key="frame" x="103" y="4" width="240" height="170"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name=".PingFangTC-Regular" family=".PingFang TC" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UBr-Yg-4oz">
+                                                    <rect key="frame" x="16" y="127" width="276" height="188"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">笑靥如花绽，莺声俏红颜。 夜深惊梦泪犹残，一转眼双亲逝，孤女有谁怜。
+巧识英雄客，危境起情缘。 怎堪别有好婵娟，不愿离分，不愿共承欢，不愿称郎君意，偏是自为难。</string>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="245" id="wQ7-YI-fIK">
+                                        <rect key="frame" x="0.0" y="574" width="375" height="245"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wQ7-YI-fIK" id="GZS-mI-bK1">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="244.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound2" translatesAutoresizingMaskIntoConstraints="NO" id="Ll9-Hg-Dih">
+                                                    <rect key="frame" x="0.0" y="-7" width="375" height="284"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="沈七七" translatesAutoresizingMaskIntoConstraints="NO" id="lkF-xY-vYi">
+                                                    <rect key="frame" x="0.0" y="2" width="95" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zFX-xR-z7m">
+                                                    <rect key="frame" x="103" y="4" width="256" height="170"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">峨嵋山仙霞派掌门清柔师太座下弟子，与四位师姐妹合称「仙霞五奇」。
+个性较为温婉和顺，虽心中有主见与思想却不太敢表达，很在意别人的感受，所以显得略微拘谨与软弱；但有勇气、韧性强、肯吃苦，其实是个外柔内刚的女生。</string>
+                                                    <fontDescription key="fontDescription" name=".PingFangTC-Regular" family=".PingFang TC" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PUx-vP-NbG">
+                                                    <rect key="frame" x="16" y="127" width="343" height="117"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">舞剑佳人风采现，花容淡染轻愁。 雪山习艺忘心忧，夜阑人静，忆母泣红眸。
+千里还家情真切，风言冷语伤心。 亲情尽散缈无痕，残菊吹落，霜惹叶离分。</string>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="249" id="Bzu-pC-2tP">
+                                        <rect key="frame" x="0.0" y="819" width="375" height="249"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bzu-pC-2tP" id="r0m-nU-dHj">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="248.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound2" translatesAutoresizingMaskIntoConstraints="NO" id="s9U-vy-prV">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="279"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="李憶如" translatesAutoresizingMaskIntoConstraints="NO" id="986-fv-ymh">
+                                                    <rect key="frame" x="0.0" y="2" width="95" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="李逍遥与赵灵儿之女，乃神族女娲的后裔。从小没有母亲陪伴，父亲也久久才能看到一次，但是在李大娘细心的教导与仙灵岛优良的环境下，养成了爽朗率直、胸襟宽大的个性，对人没戒心，是个调皮可爱、无心机的可爱女孩。" translatesAutoresizingMaskIntoConstraints="NO" id="PMw-UA-Yuq">
+                                                    <rect key="frame" x="103" y="4" width="256" height="170"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name=".PingFangTC-Regular" family=".PingFang TC" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gFN-gp-lvx">
+                                                    <rect key="frame" x="16" y="127" width="343" height="131"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">红了桃花暖青莲，隐隐绕吹烟。 仙灵水月，风光明媚，圣境悠然。
+别居仙岛觉聊赖，悄悄下凡间， 红尘扰嚷，花花世界，总是新鲜。</string>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="pE3-aj-K7q" id="G1L-j5-psV"/>
+                            <outlet property="delegate" destination="pE3-aj-K7q" id="evM-eE-1V4"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="人物" id="wFW-BX-GDv"/>
+                    <navigationItem key="navigationItem" id="IF0-f3-Rvp"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gbw-ky-Ned" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="957.60000000000002" y="-2457.6354679802957"/>
+        </scene>
+        <!--故事劇情-->
+        <scene sceneID="Ok6-bE-C4W">
+            <objects>
+                <tableViewController id="BEZ-oQ-jOF" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hpR-PV-iaR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection id="4ek-7x-Xh7">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="731" id="NwS-26-hev">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="731"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NwS-26-hev" id="HHN-OE-nrm">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="730.66666666666663"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound5" translatesAutoresizingMaskIntoConstraints="NO" id="97u-GW-HiA">
+                                                    <rect key="frame" x="0.0" y="-15" width="375" height="661"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="duo-ke-Jym">
+                                                    <rect key="frame" x="0.0" y="11" width="375" height="635"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">          李逍遥乘着飞剑来到罗刹洞。在洞的深处，遇见罗刹鬼婆，并于之决一死战。由于罗刹鬼婆实在难以对付，李逍遥最终告败。 
+          一开始被婶婶敲起来后出房门，遇到三个苗族的人，到楼下门口又遇到一个醉汉要酒喝，婶婶让李逍遥先不要管他，到厨房去把酒菜拿到楼上有两个人的房间里。客人嫌酒太难喝了，所以李逍遥把酒收起来，看醉汉可怜，便拿给他喝。那人本来答应喝一口，但是竟然把酒全喝完了，为了表示歉意就答应传授逍遥武艺再到厨房去，婶婶拿50元叫逍遥去买虾，于是便出门探险。去菜市场买虾了。和人们对话得知，原来海上风浪大，船都不出海了，所以买不到虾了。返回时，香兰通知婶婶病倒了，到客栈婶婶的房间。李逍遥听王小虎的话，决定上仙灵岛找仙女求药，出门时在门口遇到苗人首领，给李逍遥破天锤助他破解仙灵岛的阵法，再到菜市场旁的港口找张四去仙灵岛。 
+          到了仙灵岛后，张四在外面等李逍遥，于是只有李逍遥孤身一人闯。进去后找到六座石像，分别用破天锤击破。石像都打破后出现一条莲花路，进入仙灵洞天。在湖的附近发现一堆衣服，原来有一位仙女在洗澡，李逍遥惊动仙女，以衣服换求灵药。赵灵儿要李逍遥后退不要看，李逍遥照做不误。李逍遥等了些时间，发现仙女不见了，但突然打了雷。李逍遥求饶，表示自己要救婶婶，不得已出此下策。赵灵儿到房间拿药给李逍遥，出门遇见姥姥，被强迫娶妻。然后计划逃走。逃回家后把紫金丹拿给婶婶吃，逍遥丧失记忆。 
+          夜晚李逍遥利用密道出门，在门口遇见苗人首领，苗人首领所说的话李逍遥不解，再也未放在心上。到秀兰家得知秀兰父亲气喘病发作，至洪大夫家敲门请他治病，解决后从西北边出去到山神庙学习剑法。回家后，发现房间被强租了无法进入，从下方柴房密道爬绳子上去，调查床旁边的布袋发现灵儿，与苗人战斗。再找张四去仙灵岛救姥姥，到了仙灵岛发现一片惨状。将姥姥埋葬后返回客栈，先和躲在门口旁的小虎谈话，小虎告知苗人寻仇，进门与苗人博斗，婶婶被挟持，但被婶婶的穿云手给制服。
+第二天醒来，到婶婶房间，婶婶决定让逍遥与灵儿结伴寻母。出门到港口找方老板搭船去苏州，一上岸看到两个人被一个女的鞭打。打败女子后把她吊在树上进城去，在城门口听见求救声，返回才知道是假的。再进城，又听到求救声，返回后看到两个人正准备行不义之事。进城后得之比武招亲的事，在当铺有个人要借钱然后进客栈的赌场中看到一个人被打，打拜三个人解救书生，出客栈时遇到一个算命仙给他算命。然后去看比武招亲，会遇到书生（刘晋元），上台比武打败月如。之后便在东厢房，出房门在庭院中与月如谈话，再到西厢房和灵儿谈话，再到前厅会有算命仙来合八字，突然西厢房发现妖怪，赶至西厢房，追到蛇妖洞，到门口先打败蛇妖，进去后发现里面全是女人，但是看到人就跑。打败狐妖女后，得一把石钥匙，打开那道锁着的门，再放跑所有女生，从锁著的那道门出去。出来后可以见到一村庄，先到渔夫家借钓竿，再到村尽头找到韩医生，同时也找到了灵儿，按照大夫给的药方找齐人参、雪莲子、何首乌、银杏子、鹿茸、鲤鱼这些药材。药材集全后拿给煎药童子，把煎好的药拿给灵儿喝，灵儿复原后加入，大伙决定去抓鬼。从西边的桥出村，先往北方玉佛寺走，进去后打败几个和尚，再打败一大师可得玉佛珠，装备在灵儿身上可使灵儿能力大增（一定要装备，不然进不了将军冢），然后再转往东方黑水镇，再到镇北的乱葬岗，在乱葬岗尽头找到没盖的将军冢，进去后尽你的能力找到一里面躺著将军的棺材，打败他后掉入血池，再走到血池尽头打败赤鬼王，可得到土灵珠和引路蜂。用引路蜂出将军冢，出冢后发现冢盖又盖上了，而且全镇的僵尸都没了。            回村庄向韩大夫辞行，发现韩梦慈被抓走，再度过桥，去西方鬼阴山，找到鬼阴坛，找到梦慈，战斗后被关起来，灵儿跟石长老走了，从他们离开的门追去，追到扬州城，进客栈说要住，走到房间内，到了晚上被惊醒，原来遭小偷了，从破窗追出，走屋顶直到遇到女飞贼头目，打败女飞贼头目后把遗留下的布交还给客栈内的古董商，没想到反被诬赖，出客栈往北边过桥右边与三姑六婆交谈得知寡妇家有密门，进去与寡妇谈话，月如吃醋跑走了，从客栈的房间上屋顶追回月如，再返回进入井中，找到紫金葫芦被官差抓走，被毒打一顿，县令答应让主角去找证据，出衙门到姬三娘家，走到原来蓝衣婢女站的地方踩机关会出现密门，进入追到姬三娘后打败她主角的冤枉得以洗清，出扬州城往北走，路上遇到秀才，他想雇你当保镖，答应他可得到1000元，在山崖边遇到剑圣警告有血光之灾，还是继续走，但是秀才离开了，走到半山腰发现中剧毒死亡的古董商，调查可得一布包，走到最上面遇到一女子，跟著她进山洞，没想到被轰出来，走出来后不甘心，又进去，那女子忽然变成金蟾鬼母，又带了一只蛤蟆精，打败他们后调查蛤蟆精可得五毒珠，从蛤蟆精左边有亮光的地方出山洞，出来后看到一间客栈，进去休息一下，出门外救醒盖罗骄后前往京城，至尚书府中得知晋元身染重病，至后花园晋元房中找晋元，再出尚书府，把古董商的布包交还给他的家人在对方将以紫金葫芦做为谢礼，并可得到灵葫咒，在桥边有一乞丐可探听到两个消息（需要钱）回尚书府月如的父亲林天南追来，并要求跟他过招，只要能挡住他的七诀剑气就可以了，不必做攻击，事情解决后逍遥和月如说话，然后彩依出现，和二人说了几句话后离开，去晋元房间，发现小两口吵架，彩依把晋元催眠后离开，上前叫醒晋元，说话完出来后往大厅走，半路上遇到刘夫人和晋元，晋元向妈妈诉苦……之后和刘夫人说活，她请二人帮忙找道士驱邪，再谈一次话可得30000元。大街上可找到以前在苏州的那个算命仙，把以前欠他的钱还他，再交谈一次他会给你箴言。到客栈二楼请道士除妖。            道士被吓跑了，出晋元的房间发现所有人都睡著了，至夫人房间发现晋元不见了，调查夫人两次后离开，出尚书府，在尚书府旁的水里发现一具“尸体”，把“尸体”捞起来，赫然发现是酒剑仙。酒剑仙需要蜡烛、符纸、檀香、酒把这些东西交给酒剑仙，酒剑仙做法睡著了，月如自己跑去找妖怪，去追月如，往晋元房间方向走，在花园里遇上妖怪，打两下子妖怪就跑了，追到北方蜘蛛森林内，走到尽头跟随酒剑仙到蜀山剑派，跟酒剑仙、剑圣谈话过后到炼丹房桌上拿玉佛珠，再和剑圣谈话决定进锁妖塔中救灵儿，塔中有一个被锁在壶中的妖怪，救他出来他会帮助你，再到北方铜门前他就会帮你把门打开。再上一层有个人会在传送点前问一个问题-&gt;先跨左脚或是右脚。到右下方的地上找到一本书，里面有书中仙，把他带去解决这个问题。到了塔顶后找到灵儿打败镇狱明王，决定破坏塔逃出去，但是需潜入化血池中，走到右下方有个漩涡的地方跳下去，依序打败每个守护龙，把守护龙全解决后获救后月如死亡，灵儿垂危，需要凤凰蛋、麒麟角医治，唠叨一阵子后出门，在门右边有香蕉树，调查可得两串香焦，先到森林去找凤凰蛋，只要有小猴子挡道就给它香蕉，遇到黑鸟就按空格让它带你走，尽量找到凤凰鸟后打败它，但是凤凰蛋被偷了跟阿奴交换条件，答应她帮她找水灵珠，进洞窟后发现没啥东西。宝箱搜括完毕后由另一侧踩机关开门出来，回白苗族部落，到左上发找到开会的族长，再到右边骗开守卫进火麟洞。尽量找到火麒麟将它打败可得火神珠和麒麟角，再到右方神殿去，祈导后会回到十年前。一开始遇到一个人带著一小孩，打败二名士兵解救他们，再打败拥来的三名士兵，到王宫集合，原来发生了政变，到王宫右方的牢房与娘娘谈话，她需要天蛇仗，进大殿中间的门可通往地下室，进去后找到石长老说完口令后可通过，进去找到天蛇仗，回去拿给娘娘被娘娘拖著水遁。走到迷宫尽头醒来时在岸上，一路走下去，会见到拜月教主，再打败石长老。石长老想自杀式攻击，被凤凰抓瞎一眼。然后被凤凰带到到罗刹洞，走完迷宫（中途可能会遇到以前借你剑的土怪），打败罗刹鬼婆，再打败幻影林月如。然后被带到山神庙，找到刚被逍遥救的两个人，他会要你拿手绢到港口给一个人，拿到港口去给一位商人（灵月宫主）事件解决后逍遥的婶婶出来找小时候的逍遥，到港口武器店买一把木剑，待会会用到。            再走回山神庙，到右下方发现有一条小路，走悬崖边发现有宝箱，调查宝箱小时候的自己出现，并要求以一把木剑交换，将木剑交给他就可得到水灵珠。回村里，到客栈会看见婶婶在关小李逍遥的紧闭，到港口，和方老板说话，可以到苏州城。在城门口会看见小林月如和年轻时的林天南在骑马回到现实，已经过了一个月了，阿奴会把蛋壳交给你，回灵儿那把两种药材交给婆婆数月后灵儿生产，但婆婆要逍遥去试炼窟找36个傀儡虫，如果以前宝箱有找得仔细的话，这时应至少有1X个傀儡虫了，在往部落右方试炼窟途中遇到盖罗娇，打败她后阿奴加入。入洞窟打妖怪可得到傀儡虫，集满后用土灵珠脱离洞窟回婆婆那把傀儡虫交给她，灵儿痊育后加入，回部落时发现黑、白苗族正在打仗，至神殿祈导后可得圣灵珠、圣灵披风、天蛇杖，再到神殿右边的祭坛，调查石碑，可得一首诗，把各以前得到的灵珠照诗中提示方位在祭坛顶放置。 
+          全放对后，把怪兽打败后从地洞跳下。走了很长一段迷宫走出来后是黑苗族的王宫，到大殿去遇到灵儿的父亲，打败两名士兵后再打败假的国王。走出后到中间水池边与拜月教主战斗，把那家伙干掉后，再到水底迷宫中战斗拜月水魔兽合体。            拜月被打败后，强行与水魔兽合体，造成南诏国洪水滔天。李逍遥救起落入洪水的阿奴，与此同时，灵儿为拯救天下苍生，身披圣灵披风手持天蛇杖飞上半空。灵儿凝聚全身功力，毅然向水魔兽冲去。霎时间，一团白光照亮天地，灵儿与水魔兽同归于尽。而受灾后的南诏国，却只剩下断壁残垣。                       天空放晴，在落日的余辉映照中，天蛇杖缓缓落下，一道阳光照在天蛇杖上，却久久不见灵儿归来......。逍遥悲痛不已，辞别阿奴，踏上返乡之路。一缕笛音传至整个山间，阿奴黯然神伤地吹笛为他送行，也送走了她的心。风雪茫茫，逍遥举步为艰。迷茫间，远远看见雪中的一棵大树下，一个熟悉的身影，那人转过身子，原来是......月如手撑一伞，怀抱忆如，正微笑地望着逍遥......。</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="BEZ-oQ-jOF" id="CjY-7v-6cP"/>
+                            <outlet property="delegate" destination="BEZ-oQ-jOF" id="u9p-Fh-kOy"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="故事劇情" id="NMo-az-H8N"/>
+                    <navigationItem key="navigationItem" id="fnO-Pj-swx"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pYl-JM-an8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="957.60000000000002" y="-3309.6059113300494"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="rVd-ai-1eQ">
+            <objects>
+                <tabBarController id="Rea-XX-DTg" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CsV-Sv-fta">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="pE3-aj-K7q" kind="relationship" relationship="viewControllers" id="eSc-vF-czb"/>
+                        <segue destination="5dK-m5-9jd" kind="relationship" relationship="viewControllers" id="rRT-1p-5U2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tTR-HM-81J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1858" y="-987"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="HHY-jw-SE3">
+            <objects>
+                <tabBarController id="kza-oa-XUX" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="elt-Nn-JVf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="xVC-so-dtW" kind="relationship" relationship="viewControllers" id="Xkd-9A-7UW"/>
+                        <segue destination="hy4-8w-coq" kind="relationship" relationship="viewControllers" id="bzy-Cg-iHu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aSt-Qm-Ap0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1858" y="321"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="MMv-55-tOU">
+            <objects>
+                <tabBarController id="gs5-Y4-MhP" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mfo-Ni-k3p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="tBu-1H-JNF" kind="relationship" relationship="viewControllers" id="Wr1-No-uy5"/>
+                        <segue destination="Fw2-wo-070" kind="relationship" relationship="viewControllers" id="Wfl-gM-ccZ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGl-Tm-1zA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1858" y="1470"/>
+        </scene>
+        <!--故事劇情-->
+        <scene sceneID="gnM-RX-mL5">
+            <objects>
+                <tableViewController id="5dK-m5-9jd" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ica-DA-LCH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection id="K3n-a2-coJ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="731" id="Guo-xe-2Bf">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="731"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Guo-xe-2Bf" id="ndG-ES-ZnU">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="730.66666666666663"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TjE-LS-swz">
+                                                    <rect key="frame" x="0.0" y="11" width="375" height="709"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">          二代故事是开始于一代结束的八年后，当初与李逍遥住在同一个村子的邻居——王小虎，已经是一位十八岁的成熟青年。想当年年纪虽小，却很有孝心，不怕风浪独自上仙灵岛为父求药的事迹一直让大家们津津乐道，个性坚毅刚强，做事执着且有决心，从小视逍遥为偶像，虽然逍遥后来未收小虎为徒，但小虎心中笃定要成为如李逍遥一样的大侠；名满江湖、除魔卫道，是永远不变的目标。
+          此时的神州大地，因为八年前锁妖塔崩毁，万千妖魔尽出，天下大乱，幸有一位得道高僧——千叶禅师的出现，广纳门徒成立大慈悲明宗，四处传道布施、救灾救人，与蜀山仙剑派掌门人李逍遥同为正道的两大领袖。另一方面，魔族掌旗使孔璘，也趁机扩展势力，进行一项可怕的阴谋，意图染指人间。
+          王小虎与三位女主角便是在这样的一个时空背景，交织出一段充满亲情、友情、爱情的传奇故事。到底王小虎是如何踏上旅程、和几位女主角是如何结识且发生动人情事、如何卷入一连串安排好的阴谋中而不自觉、又如何在千叶禅师的帮助下，对抗那可怕的魔头孔璘……</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <imageView userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound6" translatesAutoresizingMaskIntoConstraints="NO" id="ImY-OY-2s2">
+                                                    <rect key="frame" x="0.0" y="-18" width="375" height="713"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="5dK-m5-9jd" id="Xd3-df-5oe"/>
+                            <outlet property="delegate" destination="5dK-m5-9jd" id="MsY-zx-HdA"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="故事劇情" id="4ie-Dv-Qnp"/>
+                    <navigationItem key="navigationItem" id="Oth-G2-qwG"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sdd-HW-7id" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="957.60000000000002" y="-1663.3004926108374"/>
+        </scene>
+        <!--人物-->
+        <scene sceneID="Ezp-Nw-mXc">
+            <objects>
+                <tableViewController id="xVC-so-dtW" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ufg-cw-CP7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="drB-XZ-gf2">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="265" id="pBr-NZ-uAB">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="265"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pBr-NZ-uAB" id="YKh-K0-OPB">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="264.66666666666669"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound3" translatesAutoresizingMaskIntoConstraints="NO" id="cNn-f2-FCj">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="265"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="夏侯瑾軒" translatesAutoresizingMaskIntoConstraints="NO" id="gZ8-T0-kUx">
+                                                    <rect key="frame" x="0.0" y="2" width="95" height="157"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OkU-YN-9qL">
+                                                    <rect key="frame" x="103" y="4" width="240" height="190"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">武林四大家族之一的夏侯家的少主，不喜舞枪弄剑，专爱趣闻逸史，让父亲深感恨铁不成钢。好在他对于仙术符法也有所涉略，没沦落到手无缚鸡之力的境地。虽然喜欢读书，但他却不是一个书呆子，有时也会有一些出人意料的鬼点子和令人发笑的感慨。在遇到问题时，他常能冷静地分析出最合理的解决办法。对待朋友全心全意，希望身边的所有人都能得到幸福，但却从不计较别人怎么看待自己。</string>
+                                                    <fontDescription key="fontDescription" name=".PingFangTC-Regular" family=".PingFang TC" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TQR-in-scQ">
+                                                    <rect key="frame" x="16" y="189" width="292" height="105"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">隨意青衫書世陌，炎涼漫映北軒窗。
+雲深何日歸來處，長效天都山水郎。
+
+</string>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCm-79-OS5">
+                                                    <rect key="frame" x="16" y="167" width="65" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="夏侯瑾軒"/>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="260" id="gL7-A5-sNI">
+                                        <rect key="frame" x="0.0" y="265" width="375" height="260"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gL7-A5-sNI" id="dTS-KL-RPb">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="259.66666666666669"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound3" translatesAutoresizingMaskIntoConstraints="NO" id="YuL-2o-egp">
+                                                    <rect key="frame" x="0.0" y="-3" width="375" height="265"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="瑕" translatesAutoresizingMaskIntoConstraints="NO" id="ewp-N4-Gym">
+                                                    <rect key="frame" x="0.0" y="2" width="95" height="157"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xMX-d5-W9H">
+                                                    <rect key="frame" x="103" y="4" width="240" height="190"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">看似平凡的卖艺少女，性格倔强，自尊心强，不喜欢被人小看，更不爱占别人的便宜。所以在游戏一开始不慎打碎夏侯瑾轩的昂贵玉佩后，决心为他做事来偿还。喜欢喝烈酒，酒量出奇的大，似乎缺乏某些神经和细胞。时常有身体不适的感觉，但晚上又常常不会睡觉。偶尔睡着了，就很难被叫醒，身上似乎藏有某种秘密。这秘密的根源，来源于身世中的某场变故。</string>
+                                                    <fontDescription key="fontDescription" name=".PingFangTC-Regular" family=".PingFang TC" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vgz-QS-3ey">
+                                                    <rect key="frame" x="16" y="189" width="298" height="105"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">摇摇葭色水间轻，澹澹风歌越蓼汀。
+自许飘蓬铭入璧，约开瑜叶上云屏。
+
+</string>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ab1-dV-4Uh">
+                                                    <rect key="frame" x="16" y="164" width="65" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="瑕"/>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="260" id="FTm-Xb-Nks">
+                                        <rect key="frame" x="0.0" y="525" width="375" height="260"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FTm-Xb-Nks" id="kYP-be-yI6">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="259.66666666666669"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound3" translatesAutoresizingMaskIntoConstraints="NO" id="J8V-WO-1ux">
+                                                    <rect key="frame" x="0.0" y="-3" width="375" height="265"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="姜承" translatesAutoresizingMaskIntoConstraints="NO" id="POi-Io-oNk">
+                                                    <rect key="frame" x="0.0" y="2" width="95" height="157"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="au8-XG-wF4">
+                                                    <rect key="frame" x="103" y="4" width="240" height="190"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">姜承一袭紫衣，双眉紧蹙，豪气中流露霸者风范。原是欧阳世家的四弟子，他忠心义胆、责任心重、沉稳寡言，本会是个江湖中人人敬仰的大侠；无奈其蚩尤后裔的身份，令其无法被容于人界，最终变成魔君姜世离。这场转变是魔翳为了达成他的目的而精心安排的，所以从姜承到姜世离，他一直都是魔翳手中的一颗棋子。</string>
+                                                    <fontDescription key="fontDescription" name=".PingFangTC-Regular" family=".PingFang TC" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gZc-4n-ZsH">
+                                                    <rect key="frame" x="16" y="189" width="298" height="105"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">霜刃何当承玉瓯，依稀梅浅敛灼流。
+剑折忿起千钧乱，朔气沧澜卷铁鍪。
+
+</string>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CdY-Os-Ndo">
+                                                    <rect key="frame" x="16" y="164" width="65" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="姜承"/>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="326" id="r9z-ug-7rp">
+                                        <rect key="frame" x="0.0" y="785" width="375" height="326"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r9z-ug-7rp" id="4ic-TK-0YI">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="325.66666666666669"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound3" translatesAutoresizingMaskIntoConstraints="NO" id="CGG-X2-Og6">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="326"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="龍溟" translatesAutoresizingMaskIntoConstraints="NO" id="22P-nT-6ky">
+                                                    <rect key="frame" x="0.0" y="2" width="95" height="157"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cur-PH-iH2">
+                                                    <rect key="frame" x="103" y="4" width="240" height="242"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">身为魔界夜叉族君王，龙溟为寻神农鼎和水灵珠解魔界炙热干旱之困只身来到人界，结识蜀山弟子凌波后一路同行，并与夏侯瑾轩等人于楼兰相遇，解决了楼兰被困事件，后和主角暂别。此后又多次不期而遇，其目的也渐渐显露，终在蜀山三皇台前被正式揭露。在主角认为他图谋不轨、对其转变不得解时，只有凌波信任了他。最后龙溟告诉凌波自己的目的，要凌波等他取水灵珠后回来带她一起去魔界。谁知因自己伤重，无力抵挡神降密境骨蛇的最后一击。龙溟拼尽最后的力量，将骨蛇毙于枪下，死在异乡，留下了遗憾。</string>
+                                                    <fontDescription key="fontDescription" name=".PingFangTC-Regular" family=".PingFang TC" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lhd-5d-mat">
+                                                    <rect key="frame" x="16" y="242" width="298" height="105"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">挽就铁马荡长戈，斩却风月破梦泽。
+此身不是白云客，紫衣深重掩山河。
+</string>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDq-Bm-g0c">
+                                                    <rect key="frame" x="16" y="204" width="65" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="龍溟"/>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="237" id="lnD-NP-CHA">
+                                        <rect key="frame" x="0.0" y="1111" width="375" height="237"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lnD-NP-CHA" id="W6Z-7e-yiX">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="236.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound3" translatesAutoresizingMaskIntoConstraints="NO" id="Pn4-pA-14Z">
+                                                    <rect key="frame" x="0.0" y="-8" width="375" height="258"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="凌波" translatesAutoresizingMaskIntoConstraints="NO" id="avb-am-fYB">
+                                                    <rect key="frame" x="0.0" y="2" width="95" height="157"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TDP-Q8-PdX">
+                                                    <rect key="frame" x="103" y="4" width="240" height="230"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">凌波心怀苍生，与妹妹凌音同为蜀山最受期待的弟子。凌波与主角解决楼兰事件，助瑕得霖风草，为龙溟盗神农鼎以拯救魔族性命。可在盗取过程中为机关所伤，与龙溟逃往流光洞。在洞中，凌波得其承诺，等他回来。可惜那一别，是永别。之后凌波重伤不治身亡，留魂魄于洞中等待龙溟。</string>
+                                                    <fontDescription key="fontDescription" name=".PingFangTC-Regular" family=".PingFang TC" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ylF-iJ-Pga">
+                                                    <rect key="frame" x="16" y="179" width="298" height="76"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">玉山飘渺望蓬莱，碧落星河只手摘。
+谁看青娥舒羽袖，东风不上凤凰台。</string>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtx-OF-cJQ">
+                                                    <rect key="frame" x="16" y="156" width="65" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="凌波"/>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="237" id="WBx-rR-rkc">
+                                        <rect key="frame" x="0.0" y="1348" width="375" height="237"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WBx-rR-rkc" id="oGx-nt-UNR">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="236.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound3" translatesAutoresizingMaskIntoConstraints="NO" id="MUT-2M-oyA">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="謝滄行" translatesAutoresizingMaskIntoConstraints="NO" id="kNU-xc-bJS">
+                                                    <rect key="frame" x="0.0" y="2" width="95" height="157"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="535-sK-7kj">
+                                                    <rect key="frame" x="103" y="4" width="240" height="230"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">畅快饮酒，潇洒挥剑，一盅酒，一把剑，醉云端，行江湖。落拓洒脱的谢沧行已向我们诠释一个真正悠然自在的仙剑奇侠。他本无意与主角相识，却意外发现姜承身世的秘密，于是与主角行走江湖，暗中观察事情动向。当姜承成为姜世离、想打开蜀山锁妖塔遗迹下的封印时，谢沧行看出了幕后黑手为枯木，牺牲了自己加固封印，并对枯木给予了重重的一击，令人界免遭人魔大战之苦。</string>
+                                                    <fontDescription key="fontDescription" name=".PingFangTC-Regular" family=".PingFang TC" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RYu-Kp-7mZ">
+                                                    <rect key="frame" x="16" y="167" width="298" height="76"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">行剑江湖松径老，卧听空谷水云生。
+三山烟雨一盅酒，落拓悠然笑树横。</string>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbh-9I-F5h">
+                                                    <rect key="frame" x="16" y="149" width="65" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="謝滄行"/>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="237" id="tPw-2F-yOo">
+                                        <rect key="frame" x="0.0" y="1585" width="375" height="237"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tPw-2F-yOo" id="JSj-zy-4Up">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="236.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound3" translatesAutoresizingMaskIntoConstraints="NO" id="lPq-rE-hBZ">
+                                                    <rect key="frame" x="0.0" y="-8" width="375" height="258"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="皇甫卓" translatesAutoresizingMaskIntoConstraints="NO" id="dVD-eE-653">
+                                                    <rect key="frame" x="0.0" y="2" width="95" height="157"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cyf-8J-1b1">
+                                                    <rect key="frame" x="103" y="4" width="240" height="230"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">江湖四大世家之皇甫家少主，为人刚正、情深义重。皇甫卓与夏侯瑾轩、姜承是好兄弟，可世事变迁，他目睹了姜承转变为魔君姜世离的过程，令他深感痛苦无奈，同时最终他失去了敬重的父亲皇甫一鸣、倾慕之人夏初临，也失去了挚友夏侯瑾轩的消息……经历多重打击、丧失部分记忆的皇甫卓并未消沉，而是坚强地站起来，重振皇甫世家。</string>
+                                                    <fontDescription key="fontDescription" name=".PingFangTC-Regular" family=".PingFang TC" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eLa-DH-E3F">
+                                                    <rect key="frame" x="16" y="176" width="298" height="76"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">铮然剑骨酬知己，炽血一腔付旧游。
+轻易王侯兴灭事，嶙峋浩气照山楼。</string>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMZ-wb-4il">
+                                                    <rect key="frame" x="16" y="157" width="65" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="皇甫卓"/>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="327" id="Sop-cc-b16">
+                                        <rect key="frame" x="0.0" y="1822" width="375" height="327"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sop-cc-b16" id="jhc-5v-5Et">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="326.66666666666669"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound3" translatesAutoresizingMaskIntoConstraints="NO" id="7aK-Db-z9I">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="327"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="厲岩" translatesAutoresizingMaskIntoConstraints="NO" id="o25-lO-lWT">
+                                                    <rect key="frame" x="0.0" y="2" width="95" height="157"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xBl-8a-RLd">
+                                                    <rect key="frame" x="103" y="4" width="240" height="240"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">身为人人喊打的半魔，厉岩对人类有着非常深的仇视，但其恩怨分明，对对待他好的人还是很敬重。在千峰岭山寨上，他保护着前来投靠的同样被人类欺负的半魔。机缘巧合之下，他不仅遇到自己在意的人结萝，也遇到了姜承。之后姜承被追杀得在人界无处容身，厉岩安顿了他。在枯木的安排之下，厉岩的半魔兄弟被杀，厉岩痛苦难当。他失去兄弟，希望结萝留在身边，并尝试待她好。当姜承被弃改名为姜世离并且蚩尤后人的身份明朗后，厉岩追随他加入净天教，成为姜世离的护法“血手”，誓要保护被人类追杀的半魔。</string>
+                                                    <fontDescription key="fontDescription" name=".PingFangTC-Regular" family=".PingFang TC" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GM7-pY-as9">
+                                                    <rect key="frame" x="16" y="242" width="298" height="76"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">铮然剑骨酬知己，炽血一腔付旧游。
+轻易王侯兴灭事，嶙峋浩气照山楼。</string>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJe-eG-UtW">
+                                                    <rect key="frame" x="16" y="204" width="65" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="厲岩"/>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="327" id="8BD-wK-Zza">
+                                        <rect key="frame" x="0.0" y="2149" width="375" height="327"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8BD-wK-Zza" id="7cG-zT-iGs">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="326.66666666666669"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound3" translatesAutoresizingMaskIntoConstraints="NO" id="wST-SR-krp">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="327"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="毒影" translatesAutoresizingMaskIntoConstraints="NO" id="zlV-ON-A2Z">
+                                                    <rect key="frame" x="0.0" y="2" width="95" height="157"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vkI-WN-zMp">
+                                                    <rect key="frame" x="103" y="4" width="240" height="248"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">研习蛊术的苗疆女子，偶然间遇到关心她安危的半魔厉岩，并且他不怕她的蛊术，结萝倾心于他，缠他不休。后在千峰岭上与前来寻找姜承的主角发生口角。因瑕的意外“丧事”，结萝无辜被主角冤枉。在暮菖兰的机智引导下，结萝答应带瑕去苗疆找师父看病，开启了瑕这病的秘密。后来随厉岩参与了姜承的公审大会，在大会上依照夏侯瑾轩的指示放毒烟，助姜承和厉岩逃跑。厉岩对兄弟已死的事难过时，结萝邀他去青木居顶层看萤火虫，告诉他她一辈子都不会离开他，令厉岩感到温暖。姜承身份明朗后，随厉岩加入净天教，成为护法“毒影”。</string>
+                                                    <fontDescription key="fontDescription" name=".PingFangTC-Regular" family=".PingFang TC" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="upx-vN-QAu">
+                                                    <rect key="frame" x="16" y="242" width="298" height="76"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">偶得君子问瑶芳，遂系丝萝与少狂。
+夜落萤飞追皓魄，晓来花放醒寒江。</string>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XU2-af-QJu">
+                                                    <rect key="frame" x="16" y="204" width="65" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="結蘿"/>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="xVC-so-dtW" id="yjI-3F-cMp"/>
+                            <outlet property="delegate" destination="xVC-so-dtW" id="YLd-2V-86J"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="人物" id="iPd-D3-M5t"/>
+                    <navigationItem key="navigationItem" id="6P2-P4-H6m"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I2z-gS-gxi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="957.60000000000002" y="-882.26600985221683"/>
+        </scene>
+        <!--人物-->
+        <scene sceneID="iHj-2b-IHG">
+            <objects>
+                <tableViewController id="tBu-1H-JNF" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kkw-9r-gpt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="Enf-ZO-Pug">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="265" id="zdx-Jb-kNB">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="265"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zdx-Jb-kNB" id="HVa-ub-mgb">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="264.66666666666669"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound4" translatesAutoresizingMaskIntoConstraints="NO" id="fXx-2Y-f3I">
+                                                    <rect key="frame" x="0.0" y="-9" width="375" height="273"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="姜雲凡" translatesAutoresizingMaskIntoConstraints="NO" id="axk-JH-28i">
+                                                    <rect key="frame" x="0.0" y="2" width="95" height="157"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="从小在山寨中长大，后来离开苍木山，结识唐雨柔、小蛮和龙幽，踏入他命中注定的江湖之旅。" translatesAutoresizingMaskIntoConstraints="NO" id="Q4a-QI-ubO">
+                                                    <rect key="frame" x="103" y="4" width="240" height="190"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name=".PingFangTC-Regular" family=".PingFang TC" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Of-ee-ZqQ">
+                                                    <rect key="frame" x="16" y="189" width="292" height="105"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">山风桀骜云轻狂，浮生痴情化剑芒。
+浪迹沧海问世道，笑看恩仇又何妨。
+</string>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itW-qW-5fw">
+                                                    <rect key="frame" x="16" y="167" width="65" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="姜雲凡"/>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="260" id="m2X-Ti-rPN">
+                                        <rect key="frame" x="0.0" y="265" width="375" height="260"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m2X-Ti-rPN" id="9oM-zB-ODq">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="259.66666666666669"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound4" translatesAutoresizingMaskIntoConstraints="NO" id="I02-qy-1Tf">
+                                                    <rect key="frame" x="0.0" y="-6" width="375" height="272"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="唐雨柔" translatesAutoresizingMaskIntoConstraints="NO" id="39U-g3-GHs">
+                                                    <rect key="frame" x="0.0" y="2" width="95" height="157"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="青荷镇唐府大小姐。性格外柔内刚、善解人意、知书达礼、平易近人。表面柔弱，实际内心坚定，只要是认定的事情就不会再改变。" translatesAutoresizingMaskIntoConstraints="NO" id="tu8-Sk-qDm">
+                                                    <rect key="frame" x="103" y="4" width="240" height="190"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name=".PingFangTC-Regular" family=".PingFang TC" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fvK-oR-oSP">
+                                                    <rect key="frame" x="16" y="189" width="298" height="105"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">荷塘玉影伴青波，细雨轻舞映珠红。
+朝露飘泊无怨悔，只愿涟漪心湖中。
+
+</string>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CR5-Ek-acm">
+                                                    <rect key="frame" x="16" y="164" width="65" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="唐雨柔"/>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="260" id="nCs-om-fS3">
+                                        <rect key="frame" x="0.0" y="525" width="375" height="260"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nCs-om-fS3" id="bB8-B0-FRr">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="259.66666666666669"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound4" translatesAutoresizingMaskIntoConstraints="NO" id="5N1-nO-BTU">
+                                                    <rect key="frame" x="0.0" y="-7" width="375" height="273"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="龍幽" translatesAutoresizingMaskIntoConstraints="NO" id="6RT-eE-WeQ">
+                                                    <rect key="frame" x="0.0" y="2" width="95" height="157"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="性格沉稳，言行充满自信。为魔界寻找水源而来到人界，起初自称为西域商人。结识姜云凡、唐雨柔、小蛮三位好友，并一同拜入蜀山仙剑派。" translatesAutoresizingMaskIntoConstraints="NO" id="RD8-fb-Q7U">
+                                                    <rect key="frame" x="103" y="4" width="240" height="190"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name=".PingFangTC-Regular" family=".PingFang TC" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EGw-sK-gHr">
+                                                    <rect key="frame" x="16" y="189" width="298" height="105"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">银龙漫舞动九霄，长戈幽影任独翱。
+芳草无心风不语，回首前尘羽飘摇。
+
+</string>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6Q-io-dbJ">
+                                                    <rect key="frame" x="16" y="164" width="65" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="龍幽"/>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="326" id="STR-es-qVL">
+                                        <rect key="frame" x="0.0" y="785" width="375" height="326"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="STR-es-qVL" id="BdO-Cu-KRB">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="325.66666666666669"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.40000000596046448" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound4" translatesAutoresizingMaskIntoConstraints="NO" id="mbk-iP-9ff">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="299"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="小蠻" translatesAutoresizingMaskIntoConstraints="NO" id="F5X-ZR-vFr">
+                                                    <rect key="frame" x="0.0" y="2" width="95" height="157"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="女娲族的直系后人，由“巫月神教”掌门海棠夫人抚养长大。擅长使用蛊术。为了撮合师父与外公，小蛮流落江湖，寻找炼制苗族“情蛊”的方法。" translatesAutoresizingMaskIntoConstraints="NO" id="ywq-eM-OS0">
+                                                    <rect key="frame" x="103" y="4" width="240" height="242"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name=".PingFangTC-Regular" family=".PingFang TC" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rt-HR-ID7">
+                                                    <rect key="frame" x="16" y="159" width="65" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="小蠻"/>
+                                                </button>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qAI-vs-TAg">
+                                                    <rect key="frame" x="16" y="197" width="298" height="105"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">山花娇艳水色青，野蛮仙子鬼灵精。
+少女满怀情蛊梦，轻唱牛郎织女星。
+</string>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="tBu-1H-JNF" id="69g-sA-3yu"/>
+                            <outlet property="delegate" destination="tBu-1H-JNF" id="CIL-Nt-tMo"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="人物" id="sCa-bZ-G6I"/>
+                    <navigationItem key="navigationItem" id="3tb-1e-sHZ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qZz-2N-ZIx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="957.60000000000002" y="704.92610837438428"/>
+        </scene>
+        <!--故事劇情-->
+        <scene sceneID="Gfb-0q-Hij">
+            <objects>
+                <tableViewController id="hy4-8w-coq" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zb7-Sh-bfM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection id="bZx-MQ-usW">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="731" id="Cdj-JM-wXT">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="731"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cdj-JM-wXT" id="ryM-Le-9KL">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="730.66666666666663"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PsQ-5i-Ehu">
+                                                    <rect key="frame" x="0.0" y="11" width="375" height="709"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">序章　远潮初起
+      夏侯世家的公子夏侯瑾轩登场，温文尔雅的表现得到下人的赞赏，却也被可惜武术不精、沉迷于神仙志怪类。在明州城卖艺的瑕和谢沧行之间发生冲突，无意中砸掉了皇甫卓送给瑾轩价值连城的玉佩。回到家的瑾轩，见到了来通告折剑山庄品剑大会事宜的姜承和欧阳弟子，此时瑕和谢沧行拜访夏侯世家坚持赔偿。有自己打算的瑾轩，向夏侯门主也就是其父夏侯彰申请了步行前往折剑山庄参加品剑大会之事，瑕、姜承与谢沧行当护卫，在瑾轩二叔夏侯韬的劝解下夏侯彰同意了瑾轩的请求。当晚姜承与瑾轩叙旧之时却遭遇了妖物的袭击，在瑕与谢沧行的帮助下战胜了妖物。  第一章　葳香凝碧　苍茫岭断烟横       离开夏侯世家，数日后来到了风景优美的凝翠甸。旅途劳累的一行人决定在岸边休息，深夜里却受到了花妖的袭击。打败花妖后，姜承出现走火入魔之势，幸好瑾轩教姜承顺息平复。第二日到达碧溪村，在旅店里与几名小贼发生冲突，一名青衣女子出手帮助众人。女子名叫暮菖兰，在得知众人情况后决定也做瑾轩的护卫。五人结伴穿过千峰岭的过程中遭到了厉岩为首的魔族山贼的袭击，最后厉岩接受了姜承的挑战，胜负未分，但是姜承又出现了走火入魔之势，由此厉岩发现了姜承自己都不知道的秘密，于是他放走了姜承一行人，五人得以安全到达折剑山庄。  第二章　梅浅雪疏　衣寒剑寞
+      瑾轩一行人到达折剑山庄，遇见皇甫卓。姜承与皇甫卓、瑾轩二人有着很不错的关系，但是在欧阳世家的弟子中并不受欢迎。与皇甫卓告别后，瑾轩三人来到折剑山庄内院，见到了欧阳倩和欧阳世家大弟子萧长风，原来欧阳倩正是姜承不受同门待见的主要原因。
+      瑾轩在山庄内看见了摆擂台赚外快的瑕，赚到了钱的瑕邀请瑾轩一起去找暮菖兰喝酒，路上却把钱给丢了。找到折剑山庄门口，得知附近村民被雪石路的妖怪抓走。皇甫卓与姜承为了伸张正义前往营救，瑾轩三人也是义不容辞。在山腰瑾轩被吸取人魂魄加快修行的妖怪雪女迷惑，失去了知觉。瑕等人折回去寻找瑾轩的时候遇到了雪女，一番苦战后终于打败了她。瑾轩不忍心下手，却被雪女暗算令瑕等人动弹不得，除了暮菖兰以外。在菖兰犹豫是否要逃开的时候，谢沧行暗中救下了他们。
+      回到折剑山庄，巧遇蜀山弟子凌音和铁笔。铁笔不知出于何种目的称是自己救下了皇甫一行人。第二日，瑾轩父亲和二叔到达折剑山庄，拜会过欧阳英和皇甫门主皇甫一鸣后，看望姜承并认识其好友唐风（唐海）。品剑大会当日，瑕与暮菖兰也参与了比武，并得到奖励。这时萧长风提出要与姜承比试。姜承胜利后，萧长风恼羞成怒，偷袭姜承，负伤的姜承再次出现走火入魔之势，一拳打飞了萧长风，自己也倒地不起。当晚，一身黑袍的枯木出现在姜承面前，告知他的蚩尤后人身份，而且会众叛亲离。暮菖兰偷听到了同门师兄弟打算对姜承不利的情报。而姜承也因重伤同门而被赶出折剑山庄。隔日，前途迷茫的姜承在折剑山庄外遇见了瑾轩等人，众人决定四处旅游陪姜承散心。
+ 第三章　飒然西望遥峰　塞外访孤城
+      步行了几日后，众人来到了深山密林（司云崖）。到达山顶后，众人看到了一方水坛，里面竟然映有神州地图。好奇的瑕触摸了水坛中西域位置，突然整个水坛连同附近地面（云来石）腾空飞起，不料空中遭到神龙的袭击，好在有惊无险地降落在了楼兰附近沙漠。在绿洲，遇见了龙溟和凌波。大家出于各自的目的，结伴前往楼兰，却发现楼兰陷入了诅咒，所有人都只能进到楼兰而无法离开。得知一切是楼兰王的鬼魂搞鬼后，瑾轩等人决定去找这个鬼魂。夜晚找到楼兰王后，与他大战了一场。楼兰王还附身到瑾轩身上。而楼兰王所做的一切，令有着国家信仰的龙溟愤怒，最终将他彻底毁灭。
+而此时在中原，萧长风被枯木杀掉，并且在皇甫一鸣的安排下顺利嫁祸给远在楼兰的姜承。龙溟与魔族长老魔翳的对话情形都被凌波悄悄看在眼中。瑕照顾被楼兰王附身的瑾轩，两人之间出现了青涩懵懂的感情。  第四章　漠上惊喧震　未料尘更
+      众人打败楼兰王，解除了楼兰的诅咒。姜承认出了龙溟的力量，与其私下交谈后若有所思。
+      与龙溟、凌波二人告别后，打算跟随商队返回中原，路遇沙虫，却在沙虫的不经意帮助下找到了云来石。迫于无奈的众人与兴奋不已的瑾轩乘坐云来石飞往皇甫家族所在的开封，可在路途中再遇神龙穹武，一番苦战后，众人终于明白了楼兰城下雨的真相。
+      来到开封皇甫家，皇甫一鸣安排了陷阱准备捕捉姜承，利用姜承达到自己的目的。姜承在暮菖兰的鼓动下决定逃亡，皇甫卓因为帮助姜承逃亡而被罚跪，却仍然心系姜承，让瑾轩去调查姜承被陷害的真相。
+      回到明州的瑾轩被父亲责骂了一番，最后二叔告诉其夏侯家族不能插手调查的原因。三人猜想姜承投靠了厉岩一群山贼，决定去将姜承找回来。在山贼营寨前遇到了来找厉岩的结萝，几句不和就大打出手。最终姜承出来相见，告知瑾轩自己已经做出了选择，返回山寨。结萝同样被关在了山寨之外，心情不好的她丢下了一些奇怪的毒药，三人晕倒，瑾轩醒来时发现已经在山下，然而，瑕却没有醒过来。
+      找到医生，医生让瑾轩等人去为瑕准备后事。愤怒之下瑾轩决定亲自去山寨找结萝算账，菖兰阻止了瑾轩，告诉瑾轩好好陪着瑕，自己一人去山寨找结萝。  第五章　折玉摧兰　人间如寄　叹飘蓬
+      暮菖兰独自来到山寨带结萝回碧溪村为瑕解毒，却发现了瑕的奇怪的病症。求医心切的瑾轩请结萝带路一起回苗疆寻找她的师傅为瑕治病，另有打算的结萝答应了瑾轩等人的要求。于是，众人和厉岩结萝一起前往苗疆。
+      在黑苗族居住青木居的外面青木小径中遇见了龙溟，龙溟听到了结萝关于神降密境的消息后告别众人独自离开。来到青木居，结萝的师傅看到瑕的症状，觉得很奇特，并非人力所能治疗，并且中原数年前也有人出现类似症状，那人与蜀山有渊源，让他们前往蜀山去找有“医圣”之名的草谷道长询问是否有治疗方法。
+      正好因为姜承的事也需要前往蜀山，但考虑到姜承的身份，故将其与厉岩、结萝留在了青木居。瑾轩一行人在蜀山在凌波的引见下见到了草谷，草谷看出是魔气困扰，让凌波带瑾轩等人去仙竹林取仙药材。
+      在仙竹林遇到了许久不见的谢沧行，在仙竹林取得药之后，菖兰想多取几份药材激怒了看守的仙灵，一番苦战后打败仙灵，愤怒的仙灵想收回本来赐给了瑕的仙药，但是在一行人的苦苦要求（更多的应该是看在谢沧行的面子上）下只是赶走了众人。
+      然而，仙药并不能治好满怀希望的瑕的病，在蜀山的御风台上，瑾轩找到了失落的瑕，鼓励她不要放弃。最后，瑕终于从失落中走出来，重新燃起了要活下去的信念，和瑾轩一起。  第六章　一局谁算谁争　纵平生意气       约好一起看星星的瑾轩和瑕，还有不知为何出现在御风台的菖兰发现璇光殿有入侵者。其实是龙溟欲闯璇光殿盗走神农鼎。凌波没有阻止龙溟进入璇光殿，反而带着瑾轩一行人一起进入了幻境，不得不与盗取神农鼎的龙溟联手。龙溟被看守三神器的三神之力重创，凌波帮龙溟破除封印之时也受到了神力的反噬。破除结界后龙溟带着神农鼎与凌波离开，留下瑾轩向蜀山的道长解释一切。
+      瑾轩如实陈述了看到的一切，而另外一边，龙溟和凌波来到凌波平素静心时的流光洞，让凌波在洞中等自己回来，自己身负重伤前往神降密境取水灵珠，并带走了凌波的珠花。料到他会前往神降密境的瑾轩一群人再次来到青木居，取得避毒珠后与追赶龙溟。瑾轩因为弄丢了珠子险些丧命，却因此拉近了与瑕的距离，和姜承的兄弟情义又更深了一步。
+      另一方面，身负重伤的龙溟遇见了看守水灵珠的骨蛇，险胜之后，却为保护神农鼎硬接下了骨蛇拼死的一击，深知伤重不治的龙溟，使出全身的力量将骨蛇钉于地面。垂危之际，枯木出现，龙溟交待完一切后闭上双眼。此时瑾轩一行赶到，枯木此次显得些许大意被众人看见了。瑾轩等人没有带走龙溟留下的武器和凌波的信物，以尊重死者，只取走了要交还蜀山的神农鼎。
+      枯木在所有人离开后，取走了龙溟留下的力量，带着力量来到流光洞，送给了还在等着龙溟归来的凌波，最后，他冻洁了全部流光洞。流光洞的石床上，只留下微笑着离开的凌波。  第七章　难却风生　枉念旧时
+      瑾轩一行人回到青木居，打算次日将神农鼎交还蜀山，顺便解决姜承的身份的事情。当晚枯木与暮菖兰见面。原来暮菖兰一直受雇于一个神秘雇主要她将瑕与姜承的消息交给他，但暮菖兰并不知道此人即是枯木。暮菖兰觉得此人很蹊跷，想打探他的底细。之后枯木姜承见面，让他妄想回到人类世界，只有魔族才是他的归宿。他还告诉姜承四大世家借追杀他的名义滥杀妖魔，而且刚从千峰岭回来，并给他一张蚩尤冢地图。与枯木见面后姜承非常担心山寨的兄弟们，决定和厉岩一起回山寨。瑾轩无奈，将姜承与厉岩送到千峰岭后，前往蜀山归还神农鼎，终于遇到了铁笔，可知皇甫一鸣并非从铁笔与凌音处得知姜承为魔族的事情。蜀山由于顾虑颇多，不便插手姜承之事，瑾轩指责蜀山道长后告辞而去。
+      瑾轩等人在碧溪村为山贼们购买了物资后，来到山寨却发现山寨已经被人类血洗，制服了发狂的厉岩，提前赶到山寨的结萝告诉众人是皇甫世家的人做了这一切，并且抓走了剩余的半魔山贼去了折剑山庄。厉岩姜承想去救人，瑾轩提出了进入山庄的计谋和策略。
+      重返折剑山庄，欧阳英为了家族的名誉，与姜承宣布断绝关系。面对四大世家疯狂的追杀，回想起之前在折剑山庄和在山寨经历的不同境遇，悲痛之下，姜承舍弃了自己的名字，改名姜世离。虽然形势有变，但在瑾轩和皇甫卓，欧阳倩的暗中帮助下厉岩与姜世离逃离了折剑山庄，狼狈逃回青木居。
+      姜世离想起枯木告诉自己的蚩尤祭坛，决定前往寻找自己的身世。走投无路的厉岩决定和他一起去寻找剩下的同胞，结萝的专一终于打动了这个完全不会笑的男子，萤火虫飞舞的夜空，在星星点点的希望中两人相依着睡去。  第八章　由来梦破难承
+      姜世离一行人找到蚩尤冢，解开了身上的所有谜，在看到覆天顶魔族的悲惨生活后决定接受魔君的称号，为人间的魔族创建一片乐土。虽然不舍，想通了的瑾轩与姜世离来了一场好兄弟之间的对决后离开覆天顶。在等解药的瑾轩等人决定陪菖兰去她的故乡看看。菖兰有些迟疑，但最后还是接受了，同样前往的还有不请自来的谢沧行。  第九章　云海问仙蓬
+      菖兰对瑾轩和瑕坦白了自己做的一切，得到了众人的谅解。由于山神指出了瑕与村民的病因相同，几人前去蜀山寻求草谷的指点，草谷终于明白了瑕的病因，表示需要一种传说中的药材（誓缘枝）才能制作出解药，而这种药材需要去海外仙岛寻找。
+      由于不知道具体位置，无法乘坐云来石前往，瑾轩回家向父亲申请出航未果企图私自出海，被抓个正着，最后父亲同意了他这份无理的请求。在明州的码头，第一次瑾轩与瑕正视这份感情，此次航行，不知归期何时。
+      航行半个月，遇到不明震荡，船毁，众人漂流到一座神奇的岛屿（寒晶岛），并且被那里的冰麟长老授予了艰巨的任务，而任务的奖励就是他们此行的目的。完成了任务的众人被独善其身的仙灵们赶回了中原。
+ 第十章　鹤影鸣归月　醉啸残峰
+      被传送到开封城外丹枫谷的一行人偶然听到了有人打算对皇甫世家不利的消息，与皇甫卓见面才知道自己在仙境待的这段时间，在中原已经5年过去了。得知姜世离一手创立的净天教与武林公然为敌（唐风也加入了净天教），四大家族均派人前往蜀山请求歼灭净天教。一行人先于四大家族赶到蜀山把药材交给草谷，炼药需要一定时间，于是瑾轩决定前往拜访姜世离问个究竟。
+      前往覆天顶，见到了模样完全改变的厉岩，并且已改名血手，被姜世离拒绝见面后回到蜀山。仙药炼制完成，瑕的病被治好了，并且为菖兰准备了拯救村子的仙药。一行人迫不及待赶回暮霭村，暮霭村与小黑终于得到了解脱。
+      在蜀山等四大家族到达的时候，净天教围攻四大家族，实际是想解开锁妖塔封印的行动开始了。谢沧行背负蜀山守护封印的大任，在锁妖塔与姜世离展开大战，最终兵解，重伤了枯木，并且化解了此次危机。
+      虽然姜世离最后念及故人之情离开了蜀山，然而他与瑾轩等人的情义也到此为止。  终章　忽道参商刹那　自是有相逢
+      净天教进攻锁妖塔行动失败，返回净天教总坛，四大家族也返攻上山。当枯木与龙幽交谈之时被唐风发现，刺杀了枯木结果被净天教众人发现，最后被姜世离关押在地牢中。
+      此时枯木已经觉得那具身体即将陨灭，而瑕的到来令他产生夺瑕的身体作为傀儡的念头。当碰见夏侯彰时，枯木现出身份——夏侯韬，然而枯木没有留情，杀了夏侯彰与其随从。之后，瑾轩赶到，发现枯木与二叔竟是同一人。枯木解释瑕与夏侯韬是他附身的人选，他们只是他在人界的宿体。本身瑕在十六年前的大地动里已经死去，因为附魂玉在瑕体内才能使瑕存活。当众人打败枯木之后，枯木施展招数假攻夏侯瑾轩，瑕为了保护夏侯瑾轩而丧命。枯木被暮菖兰刺中倒下，魂魄飞离。
+      三人随后来到司云崖准备安葬瑕，谁知枯木魂魄忽然附身到瑕的身体，刺伤瑾轩与暮菖兰。瑾轩因瑕之前所赠之玉挡住而保住性命，暮菖兰却因此重伤。瑾轩只能孤身一人去找被枯木附身的瑕，并承诺暮菖兰无论生死一定会将瑕带回来，随后找到了枯木。枯木向瑾轩道出了他策划的整个阴谋，瑾轩与其交战。最终瑕魂魄还有一丝残存使枯木不能施展法术，为了人间的安宁，瑾轩不得已痛苦的用瑕的剑刺向了瑕的身体，瑕的魂魄最终苏醒过来，用自己最后的力气将瑾轩推开致使他不落入悬崖，掉下了山崖。瑾轩落地后，看到瑕落下去后立马跳下山崖，拼命地想抓住瑕的手。随后暮菖兰赶到，崖上却只见一只破碎的毛笔，再不见夏侯瑾轩和瑕。
+      续：之后数月，净天教被四大家族和蜀山派围攻失陷，姜世离被封印，血手将神农鼎送往魔界随后被青石、玉书打败。唐风将其女唐雨柔交付给草谷医治。夏侯家因两位门主的去世与少主失踪最后由远房接管逐渐败落。而皇甫卓成为皇甫门主并扶持欧阳家。欧阳倩隐居苍木山，为其子取名姜云凡。暮菖兰一直在等夏侯瑾轩与瑕的归来。当暮菖兰再次来到司云崖来看望他们的时候，突然听到背后有匆匆的脚步声，难道是……【终】</string>
+                                                    <fontDescription key="fontDescription" name=".PingFangTC-Regular" family=".PingFang TC" pointSize="25"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <imageView userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound7" translatesAutoresizingMaskIntoConstraints="NO" id="du3-TT-myk">
+                                                    <rect key="frame" x="0.0" y="-13" width="375" height="708"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="hy4-8w-coq" id="XVv-g1-KgX"/>
+                            <outlet property="delegate" destination="hy4-8w-coq" id="Sed-8o-F3Z"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="故事劇情" id="HI1-ir-NyD"/>
+                    <navigationItem key="navigationItem" id="C4T-kU-xYW"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qqt-bg-47d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="957.60000000000002" y="-119.70443349753695"/>
+        </scene>
+        <!--故事劇情-->
+        <scene sceneID="BHh-pv-w7v">
+            <objects>
+                <tableViewController id="Fw2-wo-070" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9u2-8c-h6g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <sections>
+                            <tableViewSection id="SiS-lP-DLl">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="731" id="NoC-cJ-c32">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="731"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NoC-cJ-c32" id="GyQ-JA-FjL">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="730.66666666666663"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dQz-Au-99R">
+                                                    <rect key="frame" x="0.0" y="11" width="375" height="709"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">一、苍木山小子救美
+         姜云凡在帮助二当家的女儿方采薇抓小鸟，而老爹殷其雷找到姜云凡一顿骂。原来姜云凡偷懒没去换岗，于是云凡挨骂后去苍木山换岗。在苍木山找到马成后，听到有人呼救，便看到一群猴子在追一个女孩。姜云凡见此情况立刻跑去救人。马成发觉猴子不对劲，回到狂风寨找救兵。就在姜云凡被猴子包围的时候，殷其雷带着狂风寨的兄弟们救下两人。
+　　救下的女孩名为唐雨柔，她原是想去苍木山采名为凤鸣草的药，而这种药只长在苍木山后山的猿啼峰上，殷基雷让姜云凡帮助唐雨柔去采药。  二、伏魔猿采草凤鸣
+         姜云凡独自去猿啼峰。不久，唐雨柔追上来，因为不愿他一个人冒险，坚决要同去。云凡别无他法，只好和雨柔一起去采。到达山顶，看到凤鸣草，可这个时候，魔魈王出现。战胜魔魈王后，采药下山。途中唐雨柔用笛子演奏了一首曲子，并请姜云凡取名；姜云凡给曲子取名为“凤鸣曲”。
+　　回到狂风寨发现没人，原来山寨门口来了雨柔的父亲——唐海。唐海带着家丁来找唐雨柔，误会化解之后，唐雨柔跟着唐海回唐府，不小心遗留了笛子于狂风寨。姜云凡因为好强被殷其雷骂了一顿，为了给老爹消气，姜云凡决定去清荷镇买酒给老爹，一是给老爹过生日消气，二是把唐雨柔的笛子还过去，顺便看看唐雨柔。  三、叹蜉蝣人生如梦
+         进了清荷镇被黄山三怪的墨家师看上，纠缠一番后，姜云凡逃跑，去唐府找唐雨柔结果被家丁轰走；之后去酒坊买酒，结果酒坊说酒都让唐府买走了，气不过的姜云凡决定去唐府“拿”酒，结果在唐府碰到黄山三怪中的镜花姑，还被逼着去偷听唐雨柔和侍女的对话。这个时候草谷道长出现，镜花姑立刻逃跑，姜云凡乘机去酒窖“拿”酒。  四、气难平意盗琼浆
+         进入酒窖刚要“拿”酒，突然跑进来一条背着酒葫芦的大黄狗。狗把酒偷走了，姜云凡想抓住这条狗，结果被一位小姑娘莫名其妙地撞了一下。这个小姑娘名为小蛮，是为那条黄狗而来。小蛮继续追狗，而这个时候唐府的家丁听到动静立刻赶来，姜云凡也只得逃开。
+　　从酒窖出来，碰到黄山三怪的酒肉童。忽悠他一番后，听到狗叫声，立刻追上去，准备从狗嘴里面抢酒。追上去后发现有个老道在地上躺着，正在喝酒。姜云凡这才知道原来他是狗的主人，要求分一半酒，老道让他与大黄比试。姜云凡被大黄修理了一番，之后作为补偿，老道将大黄送给姜云凡，而自己御剑离开。姜云凡表示想学御剑，但人已飞远。姜云凡不仅酒没拿到，连老爹的寿宴也没赶上，只好赶紧回山寨。
+　　到清荷镇碰到狂风寨的人，从而得知唐家要招亲，姜云凡决定去看看究竟。  五、临险境塞翁失马
+         原来是唐雨柔不想嫁给上官雅，所以才想出这个法子。姜云凡想帮帮不上，只好先回山寨。回到山寨发现寨子里面又没人，果断去大厅找人，发现一陌生苗族女在对众人施法，赶忙上去制止，苗女要挟姜云凡让他去后山救人，并答应姜云凡救出人来，就会放过寨子里的人。姜云凡只好跟着苗女来到后山。这个时候小蛮出现。
+　　小蛮上来对苗女一顿乱揍，原来苗女名叫毒影，她偷走了巫月神殿的土灵珠，小蛮让毒影归还土灵珠；毒影假意归还，结果把二人都推入后山山谷，让两人救出山谷中的一个叫血手的人会放他们二人出来。姜云凡和小蛮找到了血手并救下。结果这个时候山谷发生震动，血手被毒影救出，两人却被困在谷内。  六、入魔窟楚相断蛇
+         血手想回来救二人，可惜被困二十年，身体虚弱，被毒影制住不让血手去救人。血手无法，只好和毒影先去救寨子里的人。被困在谷内的姜云凡和小蛮只能自己去找出路。在谷内深处，发现一个石碑，意外的是，碑上的文字只有姜云凡能看懂，因而学会魔族技能狂龙迅影斩。通过神魔之隙时，看到入口处有一名男子，正在和一魔兽对峙；姜云凡欲过来帮忙，但魔兽看见姜云凡立刻变成石像退走。男子自称是龙幽，说自己是往来人界和魔界的生意人，会传送法术。姜云凡和小蛮看到救星，立刻让龙幽带其离开山谷。离开山谷后，小蛮立刻召唤出一个小蜥蜴，跟踪小蜥蜴寻找毒影。
+ 七、穷心计上官寻衅
+         这个时候清荷镇已经被上官世家封锁，所有女人可以过，唯独男人不能过，于是三人教训上官雅。之后，三人回狂风寨，看到毒影正在施法救寨子中人。这个时候血手问姜云凡，可认识一个叫姜世离的人，姜云凡答不知，血手和毒影随后离开狂风寨。  八、举山寨云凡求亲
+         龙幽和小蛮成为姜云凡的知心好友，二人在狂风寨众人口中得知姜云凡暗恋唐雨柔，但是二当家的不许；龙幽出招帮助姜云凡离开狂风寨去唐府招亲。在唐府姜云凡遇见了皇甫家门主皇甫卓和欧阳家三小姐欧阳慧。在皇甫卓的主持下，招亲资格是必须通过三关考验。第一关是取得黑王的羽毛。姜云凡利用唐雨柔留下的笛子得到了羽毛，而上官雅利用毒术也同样获得了黑王的羽毛。  九、问惊变净天再现
+         通过第一关后，第二关是一首诗，这首诗姜云凡在第一次去唐府偷酒的时候听唐雨柔念过，于是侥幸过关；而上官夫人依靠自己世家的身份，让这一关上官雅也过关和姜云凡平手。第三关是考验音律凤鸣曲，唐雨柔在苍木山后山的时候给姜云凡吹过，还是姜云凡取的名字，故而第三关姜云凡又过了关。这个时候上官夫人不甘心，说姜云凡是个穷小子，要给姜云凡钱财想打发走。姜云凡受了刺激，拿出他娘留下的玉佩作为聘礼给众人看。结果众人看到玉佩后大惊，将姜云凡拿下，上官夫人要求立刻处死姜云凡，但是皇甫家和欧阳家都要求将姜云凡送到折剑山庄听武林盟主处理，于是姜云凡莫名其妙就被众人给绑了。  十、布迷雾恶林劫囚
+         皇甫卓请命押送姜云凡去折剑山庄，在荒石岗遇到血手和毒影，想解救他这个净天教少主姜云凡；姜云凡说自己不认识姜世离，也没听说过，但是他娘确实是欧阳夫人。血手毒影等人对皇甫卓下手，皇甫卓中毒，这个时候姜云凡挡在血手前面解救皇甫卓。姜云凡与血手对峙，血手见姜云凡拼命保护皇甫卓，让毒影留下解药离开。皇甫卓发现姜云凡还很单纯，心地善良，并不像魔族余孽那样残暴。  十一、查疫情丹枫秋色
+         到了开封府，就碰上瘟疫。皇甫卓建议众人先到皇甫家，看看有什么线索。途中，遇见了林未央。林未央因体力不支倒下，夏孤临出现扶起林未央。到了皇甫家，捕头说可能是一个名为冰麟的魔兽在水源源头下的毒，而有人见过冰麟在丹枫谷泉水的源头。众人向皇甫卓请命后就去丹枫谷查看情况。
+　　在丹枫谷最深处发现冰麟，冰麟看到众人直接进入山洞。姜云凡等人追进去大战冰麟。打败冰麟之后，得知水源污染真相。冰麟表示它想找好朋友。无奈人类寿命太短，长大后也不认识它，小猪还把它赶走。后来感到魔气的凌音赶到，凌音正想收服冰麟，姜云凡阻止。众人找它要了一点制作解毒药的血液后放它归去。
+　　回到皇甫家，发现长离剑被林未央偷走，皇甫卓拜托大家去寻找。众人找至藏幽窟，找到林未央。得知林未央是为了长离剑而来。长离剑的剑灵夏孤临，在皇甫卓的鼓励之下，牺牲了自己千年的修为给主人皇甫卓后，追随林未央而去。
+　　回到皇甫家，雨柔一人在花园长廊回忆凌音对她讲的话，原来她只有二十多年的阳寿，而每使用一次血玉救人就会扣除10天寿命。这时候折剑山庄来人传皇甫家押送姜云凡去山庄。
+　　来到折剑山庄，因为净天魔教重现的原因，武林大会被取消，武林盟主也没有扣押主角。入夜被龙幽叫起来，原来上官家来到折剑山庄。龙幽本想用法术传送走，结果法术被小蛮打断，大家落入地下。幸而姜云凡的外公外婆欧阳英和欧阳老夫人放他们离开折剑山庄。
+　　离开折剑山庄，大家听从小蛮决定去蜀山避难，因为小蛮的外公在蜀山。到达蜀山之后，发现小蛮的外公其实就是一贫道长，姜云凡被收为徒弟。收徒之后，小蛮和龙幽也分别拜了铁笔和玉书为师，但三人需要接受了试炼要下山去解决霹雳荒原的雷击问题才能正式成为蜀山弟子。
+　　下山途径仙竹林，遇到了神鹰岚翼。她本已放过云凡一行人 ，但因感觉到云凡的魔界煞气而一怒出手。打败她后，岚翼将风灵珠交给女娲的后人小蛮，而后赶来的黑王不知跟岚翼说了什么，岚翼因此放过了众人。她开启法阵，将主角传送到了霹雳荒原。
+　　到了霹雳荒原后发现进不去，皆是因为雷电之力太强，大家想起欧阳慧手里有把紫荧剑可以吸收雷电之力，决定再去折剑山庄。到了折剑山庄发现魔教血手等人正在围攻山庄，姜云凡言语化解之后，再次碰到上官夫人前来捣乱。
+　　找欧阳慧借紫荧剑，欧阳慧答应只要姜云凡能单挑打赢她就可以借出。双方在擂台对战，姜云凡打败后，借到剑回到霹雳荒原，发现是霹雳荒原的雷击是因为被贬下界的上古神龙穹武在利用雷灵珠修炼，不小心释放了雷电之力而已。但它误以为大家是来抢珠子所以不可避免的开战。打败上古神龙之后，荒原的雷劫也消失了，众人归还紫荧剑后便直接回蜀山。这时众人算是正式的蜀山弟子了。  十二、稳问故人重游旧地
+         休息之后去天玑宫，一贫教姜云凡御剑术，学会后带着唐雨柔飞回狂风寨看看。回到狂风寨，到母亲住过的山洞见到一首诗和一个护符，发现母亲一直在思念着父亲姜世离。
+　　回到蜀山 ，小蛮做包子给大家吃 ，结果龙幽中毒几天未醒，小蛮也因此被外公一贫骂。之后，小蛮一直守候在身边照顾龙幽等他醒来。龙幽醒来后，恰巧净天教开始围攻蜀山 ，姜云凡等人的任务是守卫天玑宫。结果被毒影偷袭，大家一路追了出去。在蜀山禁洞找到了毒影，发生战斗。打败后，毒影利用土灵珠逃跑，大家继续追下去。
+　　追到毒影，毒影想再次使用土灵珠遁走，结果被土灵珠反噬，这时土灵珠引出了峰龟。峰龟上来重伤毒影，众人上前护住毒影开始战斗。解决掉峰龟后，众人上前查看毒影的伤势，而没有死绝的峰龟驱动一个掉落的峰角想攻击姜云凡，毒影发现并拼死挡在姜云凡身前，被峰角击中，伤重身亡。临死前的她最终惦念的，是怀念和大哥在树上看月亮的情景。同时她还嘱托姜云凡在她死后将她火化，不然身上的蛊毒散去会伤害到姜云凡。众人答应了她的遗愿。
+　　从毒影口中得知，蜀山神器神农鼎的线索就在这蜀山禁洞深处，众人决定进去一探究竟。在最深处，众人遇到一个鬼魂——凌波。原来凌波是凌音的姐姐，当初一位叫龙溟的男子说救人需要神农鼎，她就为他盗走了神农鼎，然后就一直等待至今，而龙溟却一直没有回来。
+　　众人带着凌波的心愿，回到蜀山。大家在分析中，一致认为龙溟带着神农鼎去了魔界，但是一贫道长却不同意大家去魔界。小蛮强行要去，龙幽只得答应。
+　　通过锁妖塔遗迹进入了神魔之井，打败守望门神将，来到了夜叉族的王国祭都。从枯井老侍卫那里得知神农鼎就在九黎祠中，但是因为有士兵看守，大家决定夜探。在九黎祠遇到了炎舞，又是一场战斗。
+　　打败炎舞之后，夜叉族摄政王魔翳出现，喝退前来的追兵，请众人进入蚩尤坛前。在大殿中众人见到神农鼎。各自许愿，小蛮许愿做情蛊；而姜云凡则希望见到死去的母亲。魔翳通过神农鼎显示的答案告诉姜云凡，神农鼎可以施展回魂仙梦，使人可以回到过去，但需要女娲后人的小蛮凑齐五颗灵珠才可以施展此法术。另外魔翳请求小蛮找到水灵珠帮助夜叉族解决大旱问题。
+　　和魔翳聊过之后众人回到休息处，龙幽告诉大家，其实自己是龙溟的弟弟，但是要大家瞒着小蛮。休息之后魔翳又叫大家去九黎祠，原来是想把神农鼎让小蛮带回去，毕竟这是神农鼎没有水灵珠也无法解决魔界干旱的问题。拿到神农鼎之后，罗刹国公主红姬突然出现，向龙幽逼婚。龙幽无奈，只好说自己有断袖之癖。红姬并不相信，龙幽只得搂住姜云凡亲吻，红姬见状立刻捂脸逃走。众人开始拿龙幽开玩笑，而姜云凡则大怒。众人决定回蜀山。
+　　回到蜀山就被一贫道长拦住训斥一顿，众人回去休息后决定转天去丹房商议，小蛮用神农鼎炼出了一个可爱的包子棉花糖。大家觉得龙溟如果回到人界找水灵珠，最可能去的地方肯定就是苗疆。苗疆是巫月神殿的地盘，于是大家动身去苗疆找寻龙溟和水灵珠的下落。在巫月神殿找到海棠夫人后，众人将寻找水灵珠的事情告诉海棠夫人。海棠夫人告诉众人，水灵珠在神降密境中。
+　　在神降密境中，发现被钉死在地上的骨蛇，龙幽认出钉死骨蛇的武器是龙溟的武器，也明白了龙溟可能是因为和这个蛇战斗而死。龙幽心情复杂地拿下了哥哥的长枪，骨蛇却突然复活。龙幽想独自一人战斗骨蛇，但众人加入帮助龙幽打败骨蛇。下一步，小蛮在女娲祭坛处利用自己女娲后人的身份取得水灵珠。
+　　之后进入了青木居。到巫月神殿就被告知有三个怪人前来捣乱。姜云凡一看原来是原先遇到过的黄山三怪，黄山三怪强行收徒。小蛮为了撮合一贫和海棠，边用计请来一贫，并让海棠夫人做证人。打败后离开巫月神殿。五颗灵珠只剩下雷灵珠，故前往霹雳荒原找上古神龙，它答应给雷灵珠，但是需要打败它，打败后得到了雷灵珠，凑齐了五颗灵珠。回到蜀山后，大家决定去蜀山禁洞施展回到过去的法术 ，让姜云凡去见自己的父母。
+　　大家选择了到蜀山禁洞施展回魂仙梦法术，并且将龙溟的结局告诉凌波，凌波心愿已了，灵力耗尽即将消失，消失前庆幸她最终守住了自己对龙溟的承诺。
+　　小蛮施法、龙幽留下护法，云凡和雨柔回到了过去。在二十年前的覆天顶，净天教总坛被围攻。二人遇到三大世家；打退三大世家之后，云凡给姜世离看护身符。姜世离看到后，对云凡产生好感。这时蜀山七圣开始攻打总坛，姜世离安排人保护欧阳倩逃走，自己留下来对付蜀山七圣。云凡爹娘这一别竟是永别。
+　　出了暗道，夏侯世家的夏侯琳突然出手重伤欧阳倩。毒影留下，让众人带欧阳倩先走。在路上，欧阳倩伤势加重，姜云凡和唐雨柔都没有办法医治好欧阳倩的伤势。这时突然出现一个黑衣人，黑衣人出手就缓解了欧阳倩的伤势。黑衣人带欧阳倩到狂风寨后的那个山洞疗伤，发现欧阳倩已有身孕，黑衣人大发雷霆。姜云凡和唐雨柔才知道黑衣人原来是欧阳英，此番是来找欧阳倩的。当欧阳英知道欧阳倩是真心和姜世离在一起，独自离去了。
+　　覆天顶上，玉书建议先拿血手，而一贫也准备好神农鼎、女娲玉和伏义剑结成法阵来封印魔君姜世离。
+　　姜云凡决定去覆天顶救出姜世离，唐雨柔则提醒姜云凡，这会改变历史。姜云凡说不管怎么样他都要试一试，否则会后悔一辈子。赶到覆天顶，四大世家和蜀山已经攻入总坛。姜云凡攻击法阵失败，看到法阵中的伏义剑，抢夺伏义剑，攻击女娲血玉，但法阵已经启动，姜世离被封印。伏义剑砍在女娲血玉上，女娲血玉被砍掉一小块，面对蜀山七圣的追问，姜云凡选择逃跑。
+　　刚跑出覆天顶总坛，就被一贫拦住。一贫道长发现二人有蜀山功夫，正要盘问时，突然有人喊救命，唐雨柔听出是她父亲唐海的声音，快速跑向发出声音处。草谷找到一贫，也和一贫赶到唐海那里。
+　　唐海和怀里的孩子在净天教地牢里被困几天，因此唐海和孩子都很虚弱。草谷道长经过治疗发现，唐海只是虚弱，而婴儿因受困多日，内脏已经衰竭，很难救活。姜云凡说这个孩子一定有救，都求一贫和草谷救人。草谷拿出刚被姜云凡砍下的女娲血玉碎片，说可保婴儿二十年，待二十年后血玉消化了姜世离的元神，便可再救此婴儿。唐雨柔刚要说话，回魂仙梦突然失效，回到蜀山禁洞。
+　　在斗嘴的龙幽和小蛮发现姜云凡和唐雨柔回来之后就一言不发，问看到了什么。唐雨柔告诉三人，她已经时日无多。小蛮听后又哭，姜云凡告诉众人，唐雨柔不会有事。
+          众人刚出蜀山禁洞，就碰到蜀山弟子传令，说净天教余党围攻蜀山。众人在蜀山山门碰到血手等人，血手劝姜云凡别阻拦，姜云凡表示要去救姜世离。血手告诉姜云凡，要救姜世离需要血玉、伏羲剑和神农鼎三神器才可以。净天教与姜云凡达成协议，撤出蜀山。在血手走前，姜云凡将毒影的遗物给了血手，血手无话。  十三、决逆天一往无悔
+         进入蜀山，直接去太清殿找太武掌门要神器，太武掌门表示救魔君之事不要再提。龙幽提出，根据蜀山门规，只要有人能够闯过七星伏魔阵，掌门也无权质疑。太武掌门大怒，说这是欺师灭祖的行为，闯不过就是死。众人权衡之下，为了姜云凡与唐雨柔，依然决定闯阵。
+          摇光宫闯过凌音的第一阵后，龙幽将凌波和龙溟的事情告诉了凌音，并告诉凌音道长，凌波很想念她。
+          开阳宫，铁笔让众人欣赏墙上的一幅字画，进入了幻境，铁笔让姜云凡选择当初的决定要不要更改。姜云凡表示依然会那么做。铁笔表示过关。
+　　玉衡宫，草谷装作看不到众人，叫弟子配制疗伤药，暗示众人离开。
+　　天权宫，众人触动了天权奇阵，但破阵方式很简单。
+　　天玑宫，一贫告之去太武掌门那就是送死，如果要去，那要过他这一关。姜云凡不肯跟师父动手。一贫道长说若姜云凡一个人接住他十招就算过关。
+　　天璇宫，开启天璇迷局，闯过则过关，闯不过则会死。
+　　天枢宫，太武掌门。战胜后就完成了七星伏魔阵的考验，众人可以前往三皇台取得神器。  十四、得神器不见芳踪
+         通过璇光殿进入三皇台，女娲神石启动咒文只有女娲后人小蛮看得懂，小蛮看完关于解除封印和延续生命说，血玉如果提前解除封印的人或者物就会变成普通的石头。这就是说，如果提前解除封印，释放姜世离，那么血玉变成普通石头，将无法帮助唐雨柔，而如果要帮助唐雨柔则就要放弃救出姜世离。
+　　唐雨柔听到后，立刻离开三皇台，姜云凡追出去。结果发现唐雨柔已经离开蜀山，众人找遍可能去的地方，但是都没有找到。这时小蛮从玉书那里得知，女娲娘娘应该还有秘法修复血玉，可以既能解救姜世离，又可以解救唐雨柔。但是需要召唤女娲娘娘，众人赶往巫月神殿，请海棠夫人帮忙。  十五、惜蒹葭惜语刹那
+         海棠夫人带众人来到女娲圣像的所在地，交给小蛮天蛇杖和咒法，让小蛮带大家去女娲圣像那里召唤女娲圣灵，问清如何同时搭救姜世离和唐雨柔。三人来到女娲圣像面前，小蛮通过天蛇杖召唤出女娲圣灵，问清楚怎么样才能搭救姜世离和唐雨柔，结果很让大家大吃一惊，俩人是可以同时搭救，但是必须要有蚩尤血脉的人做神器祭品（也就是让姜云凡做祭品），这个，救人反要再害人，姜云凡同意了，而小蛮和龙幽不愿意。
+         最后龙幽告诉姜云凡，唐雨柔可能在唐家堡，姜云凡立刻去唐家堡找唐雨柔，可是唐海说唐雨柔不在，这个时候唐雨柔的侍女小翠告诉姜云凡，唐雨柔在他们第一次相见的地方——苍木山，姜云凡立刻前往苍木山需找唐雨柔。在一只猴子的带领下，姜云凡终于在苍木山后山找到了唐雨柔，相拥在一起。姜云凡告诉唐雨柔，已经找到两全其美的法子，小蛮和龙幽在覆天顶等他们。
+         逆天阵准备前，姜云凡和唐雨柔、小蛮还有龙幽交待了很多，于是唐雨柔也发现了一丝不对，但是又不清楚是什么。进入逆天阵，唐雨柔发现在阵中姜云凡是祭品，越发不对，最后关头，唐雨柔突入阵中将姜云凡替下，替代了姜云凡祭品的位置，这个时候逆天阵大破，血玉也变成碎片，唐雨柔也变成了点点繁星消失在空中，唐雨柔永远的离开了，姜世离破玉而出。
+         姜世离心中仇恨不灭，更想破除锁妖塔封印带领众人回到魔界生活。当封印破除后，魔翳带着夜叉族人来到地面，姜世离这才明白，自己一直以来被魔翳利用，只是他的计划中的一颗棋子。被利用的姜世离因为使用神器而元气大伤，无法与魔翳争斗。于是姜云凡、小蛮和龙幽，与魔翳为敌。打倒湮世穹兵之后，魔翳和湮世穹兵合体准备进行最后一战，这个时候姜云凡、龙幽和小蛮都没有力气再战，眼看合体后的湮世穹兵要砍到他们。这个时候姜世离出现，替他们挡住了这一击，并且冲进湮世穹兵体内，和湮世穹兵还有魔翳一起同归于尽。最后姜世离、湮世穹兵消失在虚空中，魔翳落下，口中念念不忘夜叉族，龙幽安慰其说，他会做好一个王，魔翳心安离去。
+         之后，龙幽以夜叉王的身份命令夜叉族停止战斗，回到魔界，姜云凡以净天教少主的身份命令净天教停止战斗，保护蜀山，一场浩劫就此避免。
+          蜀山大战之后，净天教有三成的人愿意留在蜀山，其他人希望前往魔界，而血手因为姜世离生死未卜，决定生要见人，死要见尸。而海棠夫人这个时候出现，告诉姜云凡，那块血玉并未失去灵气，或许有一个温暖的灵魂在里面吧，从此之后姜云凡一直带着那个血玉。
+         这个时候太武掌门找到众人，告诉姜云凡，魔族虽退但是神魔之井打开，必须封印，众人决定沉掉蜀山来封印神魔之井，修复封印需要八个人，蜀山七圣之外还少一个，希望姜云凡能够胜任。封印之后，任何法术都无法通过，封印之初甚为脆弱，需要八个人千年守护这封印。封印后，意味着龙幽的传送法术也无法通过，答应魔翳做好夜叉族王的龙幽沉默了，小蛮才明白自己的心意，但是无法改变这个现实，含泪施法帮助魔界恢复水源。魔界大旱得以解决。  十六、补界痕待续仙缘
+         尘归尘，土归土，一切野心与爱恨情仇就此落定。虽然唐雨柔走了，但是她是为了自己的那份爱，舍身为爱，虽然龙幽和小蛮被神魔之井隔在人魔两界，但是两个都是为了自己的使命和族人。
+　　三皇台，封印旁，姜云凡和姜世离的守护兽戾枭守着封印，突然血玉一闪，有一个熟悉的声音在呼唤着云凡。【终】</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <imageView userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound8" translatesAutoresizingMaskIntoConstraints="NO" id="k15-yQ-4e8">
+                                                    <rect key="frame" x="0.0" y="-22" width="375" height="717"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Fw2-wo-070" id="sTM-dO-O6s"/>
+                            <outlet property="delegate" destination="Fw2-wo-070" id="YoI-SF-zmM"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="故事劇情" id="SXr-DS-U0C"/>
+                    <navigationItem key="navigationItem" id="BfO-1E-pmG"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="auK-wD-hbU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="957.60000000000002" y="1447.536945812808"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="F2t-34-JzT">
+            <objects>
+                <viewController id="Odu-50-UXA" customClass="ViewController" customModule="_0453048_book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" multipleTouchEnabled="YES" tag="25" contentMode="scaleToFill" id="Nsu-3S-6JC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView multipleTouchEnabled="YES" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound9" highlightedImage="仙劍歷代關係圖" translatesAutoresizingMaskIntoConstraints="NO" id="VMm-3w-SfZ">
+                                <rect key="frame" x="-32" y="45" width="449" height="681"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.89805700180000003" green="1" blue="0.98627721889999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="仙劍歷代關係圖" highlightedImage="仙劍歷代關係圖" translatesAutoresizingMaskIntoConstraints="NO" id="s4l-zk-f8c">
+                                <rect key="frame" x="105" y="88" width="165" height="641"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.89805700180000003" green="1" blue="0.98627721889999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92442923860000004" green="0.99737662959999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="0.87293655660000002" blue="0.37129820749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="YJW-PJ-9HB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" badgeValue="1-5代" id="hhq-4h-gRe"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="WVt-d4-PCC"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uh3-X7-FiZ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4039.1999999999998" y="2259.6059113300494"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="xaf-EO-2gA">
+            <objects>
+                <tabBarController id="FyL-fG-m7w" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5pV-gT-nUd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Odu-50-UXA" kind="relationship" relationship="viewControllers" id="9aV-jy-RdY"/>
+                        <segue destination="laC-Xr-eeC" kind="relationship" relationship="viewControllers" id="kEg-RS-Jvb"/>
+                        <segue destination="MgP-LG-Snh" kind="relationship" relationship="viewControllers" id="eFU-8J-V62"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bJ6-Ae-dLB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2980" y="1448"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="57h-A9-G7c">
+            <objects>
+                <viewController id="MgP-LG-Snh" customClass="ViewController" customModule="_0453048_book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" multipleTouchEnabled="YES" tag="25" contentMode="scaleToFill" id="2dV-Mq-jz1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView multipleTouchEnabled="YES" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound11" highlightedImage="仙劍歷代關係圖" translatesAutoresizingMaskIntoConstraints="NO" id="L9s-Bd-okF">
+                                <rect key="frame" x="-235" y="52" width="905" height="633"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.89805700180000003" green="1" blue="0.98627721889999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1,2,5" highlightedImage="仙劍歷代關係圖" translatesAutoresizingMaskIntoConstraints="NO" id="PMx-HT-DMe">
+                                <rect key="frame" x="16" y="264" width="343" height="162"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.89805700180000003" green="1" blue="0.98627721889999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92442923860000004" green="0.99737662959999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="0.87293655660000002" blue="0.37129820749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="JbC-Us-i8T"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" badgeValue="1-５代" id="DjN-zT-m4X"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="jNr-oJ-8Gx"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1gj-eC-NO4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2386.4000000000001" y="2259.6059113300494"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Z4c-gG-PP8">
+            <objects>
+                <viewController id="laC-Xr-eeC" customClass="ViewController" customModule="_0453048_book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" multipleTouchEnabled="YES" tag="25" contentMode="scaleToFill" id="5kj-Ok-9Op">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView multipleTouchEnabled="YES" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bound10" highlightedImage="仙劍歷代關係圖" translatesAutoresizingMaskIntoConstraints="NO" id="j1Y-j5-1xD">
+                                <rect key="frame" x="-35" y="33" width="449" height="719"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.89805700180000003" green="1" blue="0.98627721889999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="１,２" highlightedImage="仙劍歷代關係圖" translatesAutoresizingMaskIntoConstraints="NO" id="g5a-hv-0zK">
+                                <rect key="frame" x="38" y="33" width="299" height="696"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.89805700180000003" green="1" blue="0.98627721889999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92442923860000004" green="0.99737662959999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="0.87293655660000002" blue="0.37129820749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="tuq-lL-d0w"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" badgeValue="１代,２代" id="RUz-gk-XkC"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="7pw-Dz-oWf"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CiJ-ew-VFQ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3263.1999999999998" y="2259.6059113300494"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1,2,5" width="495" height="259"/>
+        <image name="bound1" width="94" height="59"/>
+        <image name="bound10" width="341" height="256"/>
+        <image name="bound11" width="166" height="89"/>
+        <image name="bound2" width="480" height="300"/>
+        <image name="bound3" width="94" height="59"/>
+        <image name="bound4" width="94" height="59"/>
+        <image name="bound5" width="94" height="59"/>
+        <image name="bound6" width="94" height="59"/>
+        <image name="bound7" width="320" height="200"/>
+        <image name="bound8" width="94" height="59"/>
+        <image name="bound9" width="640" height="400"/>
+        <image name="仙劍歷代關係圖" width="126" height="563"/>
+        <image name="凌波" width="89" height="145"/>
+        <image name="厲岩" width="89" height="133"/>
+        <image name="唐雨柔" width="426" height="682"/>
+        <image name="夏侯瑾軒" width="89" height="146"/>
+        <image name="姜承" width="173" height="318"/>
+        <image name="姜雲凡" width="420" height="587"/>
+        <image name="小蠻" width="341" height="564"/>
+        <image name="李憶如" width="63" height="89"/>
+        <image name="李逍遙" width="183" height="251"/>
+        <image name="林月如" width="183" height="251"/>
+        <image name="毒影" width="89" height="161"/>
+        <image name="沈七七" width="275" height="378"/>
+        <image name="王小虎" width="275" height="378"/>
+        <image name="瑕" width="89" height="132"/>
+        <image name="皇甫卓" width="89" height="117"/>
+        <image name="蘇媚" width="53" height="73"/>
+        <image name="謝滄行" width="89" height="127"/>
+        <image name="趙靈兒" width="108" height="149"/>
+        <image name="開始" width="213" height="111"/>
+        <image name="阿奴" width="66" height="91"/>
+        <image name="龍幽" width="426" height="516"/>
+        <image name="龍溟" width="89" height="117"/>
+        <image name="１,２" width="188" height="441"/>
+    </resources>
 </document>
